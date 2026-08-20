@@ -1,0 +1,187 @@
+{
+  "situations": [
+    {
+      "id": "abbiegen",
+      "label": "Abbiegen",
+      "en": "turning",
+      "count": 3807,
+      "by_type": {
+        "listen_react": 1686,
+        "listen_meaning": 2121
+      },
+      "by_register": {
+        "lesson": 2678,
+        "exam": 1129
+      }
+    },
+    {
+      "id": "technik",
+      "label": "Technik",
+      "en": "technique",
+      "count": 2823,
+      "by_type": {
+        "listen_react": 1076,
+        "listen_meaning": 1747
+      },
+      "by_register": {
+        "lesson": 2812,
+        "exam": 11
+      }
+    },
+    {
+      "id": "anfahren",
+      "label": "Anfahren",
+      "en": "starting off",
+      "count": 1087,
+      "by_type": {
+        "listen_react": 459,
+        "listen_meaning": 628
+      },
+      "by_register": {
+        "lesson": 1083,
+        "exam": 4
+      }
+    },
+    {
+      "id": "anhalten",
+      "label": "Anhalten",
+      "en": "stopping",
+      "count": 970,
+      "by_type": {
+        "listen_react": 430,
+        "listen_meaning": 540
+      },
+      "by_register": {
+        "exam": 11,
+        "lesson": 959
+      }
+    },
+    {
+      "id": "beobachtung",
+      "label": "Beobachtung",
+      "en": "observation",
+      "count": 910,
+      "by_type": {
+        "listen_react": 285,
+        "listen_meaning": 625
+      },
+      "by_register": {
+        "lesson": 895,
+        "exam": 15
+      }
+    },
+    {
+      "id": "geradeaus",
+      "label": "Geradeaus",
+      "en": "going straight",
+      "count": 838,
+      "by_type": {
+        "listen_react": 343,
+        "listen_meaning": 495
+      },
+      "by_register": {
+        "lesson": 769,
+        "exam": 69
+      }
+    },
+    {
+      "id": "spurwechsel",
+      "label": "Spurwechsel",
+      "en": "lane change",
+      "count": 654,
+      "by_type": {
+        "listen_react": 282,
+        "listen_meaning": 372
+      },
+      "by_register": {
+        "lesson": 653,
+        "exam": 1
+      }
+    },
+    {
+      "id": "kreuzung",
+      "label": "Kreuzung",
+      "en": "intersection",
+      "count": 551,
+      "by_type": {
+        "listen_react": 150,
+        "listen_meaning": 401
+      },
+      "by_register": {
+        "lesson": 534,
+        "exam": 17
+      }
+    },
+    {
+      "id": "autobahn",
+      "label": "Autobahn",
+      "en": "motorway",
+      "count": 393,
+      "by_type": {
+        "listen_react": 144,
+        "listen_meaning": 249
+      },
+      "by_register": {
+        "lesson": 355,
+        "exam": 38
+      }
+    },
+    {
+      "id": "wenden",
+      "label": "Wenden",
+      "en": "turning around",
+      "count": 341,
+      "by_type": {
+        "listen_react": 117,
+        "listen_meaning": 224
+      },
+      "by_register": {
+        "lesson": 241,
+        "exam": 100
+      }
+    },
+    {
+      "id": "parken",
+      "label": "Parken",
+      "en": "parking",
+      "count": 321,
+      "by_type": {
+        "listen_react": 114,
+        "listen_meaning": 207
+      },
+      "by_register": {
+        "exam": 36,
+        "lesson": 285
+      }
+    },
+    {
+      "id": "grundfahraufgabe",
+      "label": "Grundfahraufgabe",
+      "en": "basic maneuvers",
+      "count": 203,
+      "by_type": {
+        "listen_react": 57,
+        "listen_meaning": 146
+      },
+      "by_register": {
+        "lesson": 149,
+        "exam": 54
+      }
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "en": "other",
+      "count": 76,
+      "by_type": {
+        "listen_react": 3,
+        "listen_meaning": 73
+      },
+      "by_register": {
+        "lesson": 71,
+        "exam": 5
+      }
+    }
+  ],
+  "total": 12974
+}

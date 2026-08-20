@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Listen Drive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <p class="brand">Listen Drive</p>
+        <button type="button" id="topicBtn" class="topic-btn" aria-haspopup="dialog" aria-controls="filterSheet">
+          Loading…
+        </button>
+      </header>
+
+      <main class="main">
+        <p id="status" class="status">Loading…</p>
+
+        <div id="practice" class="practice" hidden>
+          <div class="video-wrap" id="videoWrap">
+            <div id="player"></div>
+            <button type="button" id="playOverlay" class="play-overlay" hidden>
+              <span class="play-icon" aria-hidden="true"></span>
+              Play
+            </button>
+            <div id="videoError" class="video-error" hidden>
+              <p>Video unavailable</p>
+              <a id="openYt" href="#" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+              <button type="button" id="skipBtn" class="text-btn">Skip</button>
+            </div>
+          </div>
+
+          <button type="button" id="replayBtn" class="text-btn replay">Replay</button>
+          <div id="reveal" class="reveal" hidden>
+            <p id="revealDe" class="reveal-de"></p>
+          </div>
+          <p id="prompt" class="prompt"></p>
+          <div id="choices" class="choices"></div>
+        </div>
+      </main>
+
+      <footer id="continueBar" class="bar" hidden>
+        <button type="button" id="continueBtn" class="primary">Next</button>
+      </footer>
+    </div>
+
+    <div id="filterSheet" class="sheet" hidden role="dialog" aria-labelledby="filterTitle">
+      <div class="sheet-backdrop" id="sheetBackdrop"></div>
+      <div class="sheet-panel">
+        <div class="sheet-head">
+          <h2 id="filterTitle">Filters</h2>
+          <button type="button" id="filterDone" class="text-btn">Done</button>
+        </div>
+
+        <fieldset class="field">
+          <legend>Situation</legend>
+          <div id="sitPills" class="pills"></div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Type</legend>
+          <div id="typePills" class="pills"></div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Register</legend>
+          <div id="regPills" class="pills"></div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Transcription</legend>
+          <div id="transcriptPills" class="pills"></div>
+        </fieldset>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>
