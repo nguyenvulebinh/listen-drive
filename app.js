@@ -3,6 +3,7 @@
 
   const el = {
     topicBtn: document.getElementById("topicBtn"),
+    topicLabel: document.getElementById("topicLabel"),
     status: document.getElementById("status"),
     practice: document.getElementById("practice"),
     videoWrap: document.getElementById("videoWrap"),
@@ -67,7 +68,6 @@
       if (!raw) return;
       const saved = JSON.parse(raw);
       if (saved && typeof saved === "object") {
-        if (typeof saved.sit === "string") state.filters.sit = saved.sit;
         if (saved.type === "listen_react" || saved.type === "listen_meaning" || saved.type === "both") {
           state.filters.type = saved.type;
         }
@@ -101,15 +101,15 @@
 
   function setTopicLabel() {
     const meta = situationMeta(state.filters.sit);
-    el.topicBtn.replaceChildren();
+    el.topicLabel.replaceChildren();
     const name = document.createElement("span");
     name.textContent = meta.label;
-    el.topicBtn.append(name);
+    el.topicLabel.append(name);
     if (meta.en) {
       const en = document.createElement("span");
       en.className = "en";
       en.textContent = `· ${meta.en}`;
-      el.topicBtn.append(en);
+      el.topicLabel.append(en);
     }
   }
 
@@ -282,10 +282,33 @@
           if (event.data === YT.PlayerState.PLAYING) {
             showPlayOverlay(false);
             showVideoError(false);
+            if (state.current && typeof player.getCurrentTime === "function") {
+              const t = player.getCurrentTime();
+              if (t < state.current.start - 0.2) {
+                try {
+                  player.seekTo(state.current.start, true);
+                } catch {
+                  /* ignore */
+                }
+              }
+            }
             startEndWatcher();
           } else if (event.data === YT.PlayerState.ENDED) {
             clearEndWatcher();
-            showPlayOverlay(false);
+            // YouTube's native replay restarts the full video at 0s.
+            // Cue the clip again so that endscreen never stays up.
+            if (state.current) {
+              try {
+                player.cueVideoById({
+                  videoId: state.current.yt,
+                  startSeconds: state.current.start,
+                  endSeconds: state.current.end,
+                });
+              } catch {
+                /* ignore */
+              }
+            }
+            showPlayOverlay(true);
           } else if (event.data === YT.PlayerState.PAUSED) {
             clearEndWatcher();
           }
@@ -512,10 +535,7 @@
       const res = await fetch("data/index.json");
       if (!res.ok) throw new Error("Could not load topics.");
       state.index = await res.json();
-      const known = new Set(state.index.situations.map((s) => s.id));
-      if (!state.filters.sit || !known.has(state.filters.sit)) {
-        state.filters.sit = pickRandomSituation();
-      }
+      state.filters.sit = pickRandomSituation();
       await loadSituation(state.filters.sit);
     } catch (err) {
       setStatus(err.message || "Could not load clips. Serve this folder over HTTP.");

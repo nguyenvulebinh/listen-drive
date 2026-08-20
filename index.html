@@ -12,9 +12,14 @@
   <body>
     <div class="app">
       <header class="header">
-        <p class="brand">Listen Drive</p>
         <button type="button" id="topicBtn" class="topic-btn" aria-haspopup="dialog" aria-controls="filterSheet">
-          Loading…
+          <span id="topicLabel">Loading…</span>
+          <svg class="topic-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"
+            />
+          </svg>
         </button>
       </header>
 
@@ -24,6 +29,7 @@
         <div id="practice" class="practice" hidden>
           <div class="video-wrap" id="videoWrap">
             <div id="player"></div>
+            <div class="player-shield" aria-hidden="true"></div>
             <button type="button" id="playOverlay" class="play-overlay" hidden>
               <span class="play-icon" aria-hidden="true"></span>
               Play
@@ -35,7 +41,15 @@
             </div>
           </div>
 
-          <button type="button" id="replayBtn" class="text-btn replay">Replay</button>
+          <button type="button" id="replayBtn" class="replay">
+            <svg class="replay-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8z"
+              />
+            </svg>
+            Replay
+          </button>
           <div id="reveal" class="reveal" hidden>
             <p id="revealDe" class="reveal-de"></p>
           </div>
