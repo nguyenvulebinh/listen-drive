@@ -12,6 +12,11 @@
     openYt: document.getElementById("openYt"),
     skipBtn: document.getElementById("skipBtn"),
     replayBtn: document.getElementById("replayBtn"),
+    playback: document.getElementById("playback"),
+    playbackToggle: document.getElementById("playbackToggle"),
+    playbackTrack: document.getElementById("playbackTrack"),
+    playbackBar: document.getElementById("playbackBar"),
+    playbackTime: document.getElementById("playbackTime"),
     prompt: document.getElementById("prompt"),
     choices: document.getElementById("choices"),
     reveal: document.getElementById("reveal"),
@@ -21,14 +26,19 @@
     filterSheet: document.getElementById("filterSheet"),
     sheetBackdrop: document.getElementById("sheetBackdrop"),
     filterDone: document.getElementById("filterDone"),
+    modePills: document.getElementById("modePills"),
+    sitLegend: document.getElementById("sitLegend"),
     sitPills: document.getElementById("sitPills"),
+    typeField: document.getElementById("typeField"),
     typePills: document.getElementById("typePills"),
+    regField: document.getElementById("regField"),
     regPills: document.getElementById("regPills"),
     transcriptPills: document.getElementById("transcriptPills"),
   };
 
   const state = {
     index: null,
+    commands: null,
     items: [],
     deck: [],
     cursor: 0,
@@ -36,7 +46,7 @@
     current: null,
     answered: false,
     selectedId: null,
-    filters: { sit: null, type: "both", reg: "both", transcript: false },
+    filters: { mode: "clips", sit: null, type: "both", reg: "both", transcript: false },
     draft: null,
   };
 
@@ -44,6 +54,7 @@
   let playerReady = false;
   let pendingPlay = false;
   let endTimer = null;
+  const clipAudio = new Audio();
 
   function shuffle(list) {
     const a = list.slice();
@@ -54,8 +65,25 @@
     return a;
   }
 
+  function isCommands(mode = state.filters.mode) {
+    return mode === "commands";
+  }
+
+  function isAudioItem(item) {
+    return Boolean(item && item.audio);
+  }
+
+  function activeCategories(mode = state.filters.mode) {
+    if (isCommands(mode)) {
+      const categories = (state.commands && state.commands.categories) || [];
+      const total = (state.commands && state.commands.items && state.commands.items.length) || 0;
+      return [{ id: "random", label: "Random", en: "any category", count: total }, ...categories];
+    }
+    return (state.index && state.index.situations) || [];
+  }
+
   function situationMeta(id) {
-    return (state.index && state.index.situations.find((s) => s.id === id)) || {
+    return activeCategories().find((situation) => situation.id === id) || {
       id,
       label: id,
       en: "",
@@ -68,6 +96,8 @@
       if (!raw) return;
       const saved = JSON.parse(raw);
       if (saved && typeof saved === "object") {
+        if (saved.mode === "clips" || saved.mode === "commands") state.filters.mode = saved.mode;
+        if (typeof saved.sit === "string") state.filters.sit = saved.sit;
         if (saved.type === "listen_react" || saved.type === "listen_meaning" || saved.type === "both") {
           state.filters.type = saved.type;
         }
@@ -90,7 +120,7 @@
   }
 
   function pickRandomSituation() {
-    const list = state.index.situations;
+    const list = activeCategories();
     return list[Math.floor(Math.random() * list.length)].id;
   }
 
@@ -114,6 +144,10 @@
   }
 
   function filteredItems() {
+    if (isCommands()) {
+      if (state.filters.sit === "random") return state.items;
+      return state.items.filter((item) => item.sit === state.filters.sit);
+    }
     return state.items.filter((item) => {
       if (state.filters.type !== "both" && item.type !== state.filters.type) return false;
       if (state.filters.reg !== "both" && item.reg !== state.filters.reg) return false;
@@ -133,6 +167,7 @@
 
   function stopClip() {
     clearEndWatcher();
+    clipAudio.pause();
     if (player && playerReady && typeof player.pauseVideo === "function") {
       try {
         player.pauseVideo();
@@ -161,6 +196,7 @@
   function showEmpty() {
     el.practice.hidden = true;
     el.continueBar.hidden = true;
+    el.playback.hidden = true;
     setStatus("No clips for these filters. Tap the topic to change them.");
   }
 
@@ -204,8 +240,47 @@
     }
   }
 
+  function formatTime(seconds) {
+    if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
+    const whole = Math.floor(seconds);
+    const minutes = Math.floor(whole / 60);
+    const remain = String(whole % 60).padStart(2, "0");
+    return `${minutes}:${remain}`;
+  }
+
+  function updatePlayback() {
+    const duration = clipAudio.duration;
+    const current = clipAudio.currentTime || 0;
+    const ratio = duration ? Math.min(1, current / duration) : 0;
+    el.playbackBar.style.width = `${Math.round(ratio * 100)}%`;
+    el.playbackTime.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
+    const playing = !clipAudio.paused && !clipAudio.ended;
+    el.playbackToggle.textContent = playing ? "Pause" : "Play";
+    el.playbackToggle.setAttribute("aria-pressed", playing ? "true" : "false");
+  }
+
+  function queueAudio(autoplay) {
+    const item = state.current;
+    showVideoError(false);
+    showPlayOverlay(false);
+    el.playback.hidden = false;
+    clipAudio.src = item.audio;
+    clipAudio.currentTime = 0;
+    updatePlayback();
+    if (!autoplay) return;
+    const pending = clipAudio.play();
+    if (pending) pending.catch(() => updatePlayback());
+  }
+
   function queueClip(autoplay) {
     pendingPlay = autoplay;
+    if (isAudioItem(state.current)) {
+      el.practice.classList.add("is-audio");
+      queueAudio(autoplay);
+      return;
+    }
+    el.practice.classList.remove("is-audio");
+    el.playback.hidden = true;
     showVideoError(false);
     showPlayOverlay(true);
     if (!state.current) return;
@@ -236,6 +311,12 @@
   }
 
   function replayClip() {
+    if (isAudioItem(state.current)) {
+      clipAudio.currentTime = 0;
+      const pending = clipAudio.play();
+      if (pending) pending.catch(() => {});
+      return;
+    }
     pendingPlay = true;
     showVideoError(false);
     if (!playerReady || !player || !state.current) {
@@ -341,6 +422,7 @@
 
   function renderCard() {
     const item = state.current;
+    el.practice.classList.toggle("is-audio", isAudioItem(item));
     el.practice.hidden = false;
     setStatus("");
     el.continueBar.hidden = false;
@@ -407,10 +489,44 @@
     return btn;
   }
 
+  function useDraftMode(mode) {
+    const draft = state.draft;
+    if (draft.mode === mode) return;
+    if (draft.mode === "clips") draft.clipSit = draft.sit;
+    if (draft.mode === "commands") draft.commandSit = draft.sit;
+    draft.mode = mode;
+    const categories = activeCategories(mode);
+    const remembered = mode === "commands" ? draft.commandSit : draft.clipSit;
+    draft.sit = categories.some((category) => category.id === remembered)
+      ? remembered
+      : categories[Math.floor(Math.random() * categories.length)].id;
+  }
+
   function renderFilterSheet() {
     const draft = state.draft;
+    const commandsMode = isCommands(draft.mode);
+    el.sitLegend.textContent = commandsMode ? "Category" : "Situation";
+    el.typeField.hidden = commandsMode;
+    el.regField.hidden = commandsMode;
+
+    el.modePills.replaceChildren();
+    [
+      { id: "clips", label: "Clips" },
+      { id: "commands", label: "Commands" },
+    ].forEach((mode) => {
+      el.modePills.append(
+        pill(mode.label, {
+          on: draft.mode === mode.id,
+          onClick() {
+            useDraftMode(mode.id);
+            renderFilterSheet();
+          },
+        })
+      );
+    });
+
     el.sitPills.replaceChildren();
-    state.index.situations.forEach((sit) => {
+    activeCategories(draft.mode).forEach((sit) => {
       el.sitPills.append(
         pill(sit.label, {
           count: sit.count,
@@ -499,16 +615,30 @@
     nextCard();
   }
 
+  function showCommandCategory() {
+    state.items = state.commands.items || [];
+    setTopicLabel();
+    rebuildDeck();
+    nextCard();
+  }
+
   async function applyDraft() {
     if (!state.draft) return;
     const draft = state.draft;
+    const modeChanged = draft.mode !== state.filters.mode;
     const sitChanged = draft.sit !== state.filters.sit;
     const typeChanged = draft.type !== state.filters.type;
     const regChanged = draft.reg !== state.filters.reg;
-    state.filters = { ...draft };
+    state.filters = {
+      mode: draft.mode,
+      sit: draft.sit,
+      type: draft.type,
+      reg: draft.reg,
+      transcript: draft.transcript,
+    };
     saveFilters();
     closeFilters();
-    if (!sitChanged && !typeChanged && !regChanged) {
+    if (!modeChanged && !sitChanged && !typeChanged && !regChanged) {
       if (state.current && !el.practice.hidden) updateTranscript();
       return;
     }
@@ -517,7 +647,9 @@
     el.practice.hidden = true;
     el.continueBar.hidden = true;
     try {
-      if (sitChanged || !state.items.length) {
+      if (isCommands()) {
+        showCommandCategory();
+      } else if (modeChanged || sitChanged || !state.items.length) {
         await loadSituation(state.filters.sit);
       } else {
         setTopicLabel();
@@ -532,11 +664,23 @@
   async function boot() {
     loadSavedFilters();
     try {
-      const res = await fetch("data/index.json");
-      if (!res.ok) throw new Error("Could not load topics.");
-      state.index = await res.json();
-      state.filters.sit = pickRandomSituation();
-      await loadSituation(state.filters.sit);
+      const [indexRes, commandsRes] = await Promise.all([
+        fetch("data/index.json"),
+        fetch("data/commands.json"),
+      ]);
+      if (!indexRes.ok) throw new Error("Could not load topics.");
+      if (!commandsRes.ok) throw new Error("Could not load commands.");
+      state.index = await indexRes.json();
+      state.commands = await commandsRes.json();
+      if (isCommands()) {
+        const known = activeCategories().some((category) => category.id === state.filters.sit);
+        if (!known) state.filters.sit = pickRandomSituation();
+        showCommandCategory();
+      } else {
+        state.filters.mode = "clips";
+        state.filters.sit = pickRandomSituation();
+        await loadSituation(state.filters.sit);
+      }
     } catch (err) {
       setStatus(err.message || "Could not load clips. Serve this folder over HTTP.");
     }
@@ -552,6 +696,26 @@
     playCurrent();
   });
   el.replayBtn.addEventListener("click", replayClip);
+  el.playbackToggle.addEventListener("click", () => {
+    if (!isAudioItem(state.current)) return;
+    if (clipAudio.paused || clipAudio.ended) {
+      if (clipAudio.ended || !clipAudio.src) clipAudio.currentTime = 0;
+      const pending = clipAudio.play();
+      if (pending) pending.catch(() => updatePlayback());
+      return;
+    }
+    clipAudio.pause();
+  });
+  el.playbackTrack.addEventListener("click", (event) => {
+    if (!isAudioItem(state.current) || !clipAudio.duration) return;
+    const rect = el.playbackTrack.getBoundingClientRect();
+    const ratio = rect.width ? (event.clientX - rect.left) / rect.width : 0;
+    clipAudio.currentTime = Math.min(1, Math.max(0, ratio)) * clipAudio.duration;
+    updatePlayback();
+  });
+  ["timeupdate", "play", "pause", "ended", "loadedmetadata"].forEach((eventName) => {
+    clipAudio.addEventListener(eventName, updatePlayback);
+  });
   el.skipBtn.addEventListener("click", nextCard);
   el.continueBtn.addEventListener("click", onPrimary);
 

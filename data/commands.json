@@ -1,0 +1,6171 @@
+{
+  "categories": [
+    {
+      "id": "basic",
+      "label": "Fahranweisungen",
+      "en": "basic driving",
+      "count": 22
+    },
+    {
+      "id": "stopping",
+      "label": "Anhalten",
+      "en": "stopping",
+      "count": 15
+    },
+    {
+      "id": "parking",
+      "label": "Einparken",
+      "en": "parking",
+      "count": 21
+    },
+    {
+      "id": "turning",
+      "label": "Wenden",
+      "en": "turning around",
+      "count": 12
+    },
+    {
+      "id": "braking",
+      "label": "Gefahrbremsung",
+      "en": "emergency stop",
+      "count": 13
+    },
+    {
+      "id": "lanes",
+      "label": "Spurwechsel",
+      "en": "lanes and speed",
+      "count": 16
+    },
+    {
+      "id": "roundabouts",
+      "label": "Kreisverkehr",
+      "en": "roundabouts",
+      "count": 14
+    },
+    {
+      "id": "lights",
+      "label": "Beleuchtung",
+      "en": "lights",
+      "count": 16
+    },
+    {
+      "id": "tires",
+      "label": "Reifen",
+      "en": "tires",
+      "count": 11
+    },
+    {
+      "id": "reflectors",
+      "label": "Rückstrahler",
+      "en": "reflectors",
+      "count": 6
+    },
+    {
+      "id": "hood",
+      "label": "Motorraum",
+      "en": "under the hood",
+      "count": 14
+    },
+    {
+      "id": "controls",
+      "label": "Bedienelemente",
+      "en": "controls",
+      "count": 17
+    },
+    {
+      "id": "exam",
+      "label": "Prüfung",
+      "en": "start and finish",
+      "count": 13
+    },
+    {
+      "id": "phrases",
+      "label": "Nachfragen",
+      "en": "if you don't understand",
+      "count": 9
+    },
+    {
+      "id": "words",
+      "label": "Wörter",
+      "en": "vocabulary",
+      "count": 26
+    }
+  ],
+  "items": [
+    {
+      "id": "basic-01",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Geradeaus fahren.",
+      "en": "Drive straight ahead.",
+      "audio": "audio/711f06b99bd0.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive straight ahead."
+        },
+        {
+          "id": "b",
+          "text": "Please turn left."
+        },
+        {
+          "id": "c",
+          "text": "If nothing is said, continue straight ahead."
+        },
+        {
+          "id": "d",
+          "text": "Left at the next street."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "basic-02",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie geradeaus.",
+      "en": "Drive straight ahead.",
+      "audio": "audio/b136f3bb8163.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive straight ahead."
+        },
+        {
+          "id": "b",
+          "text": "Turn left at the next intersection."
+        },
+        {
+          "id": "c",
+          "text": "Turn left."
+        },
+        {
+          "id": "d",
+          "text": "Turn right at the next opportunity."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "basic-03",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie weiter geradeaus.",
+      "en": "Continue straight ahead.",
+      "audio": "audio/88655e0c7caf.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please turn left."
+        },
+        {
+          "id": "b",
+          "text": "If nothing is said, continue straight ahead."
+        },
+        {
+          "id": "c",
+          "text": "Continue straight ahead."
+        },
+        {
+          "id": "d",
+          "text": "Drive toward the motorway."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "basic-04",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bitte rechts abbiegen.",
+      "en": "Please turn right.",
+      "audio": "audio/a30f4d5004fa.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Follow the course of the road."
+        },
+        {
+          "id": "b",
+          "text": "Turn left at the junction."
+        },
+        {
+          "id": "c",
+          "text": "Turn right."
+        },
+        {
+          "id": "d",
+          "text": "Please turn right."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "basic-05",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bitte links abbiegen.",
+      "en": "Please turn left.",
+      "audio": "audio/1fbed6d05ea8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn right at the traffic light."
+        },
+        {
+          "id": "b",
+          "text": "Turn right."
+        },
+        {
+          "id": "c",
+          "text": "If nothing is said, continue straight ahead."
+        },
+        {
+          "id": "d",
+          "text": "Please turn left."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "basic-06",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Biegen Sie rechts ab.",
+      "en": "Turn right.",
+      "audio": "audio/167e8710d8d5.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Follow the priority road."
+        },
+        {
+          "id": "b",
+          "text": "Turn right."
+        },
+        {
+          "id": "c",
+          "text": "Right at the next street."
+        },
+        {
+          "id": "d",
+          "text": "Turn right at the traffic light."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "basic-07",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Biegen Sie links ab.",
+      "en": "Turn left.",
+      "audio": "audio/cd9b546c7c41.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please turn left."
+        },
+        {
+          "id": "b",
+          "text": "Turn left."
+        },
+        {
+          "id": "c",
+          "text": "If nothing is said, continue straight ahead."
+        },
+        {
+          "id": "d",
+          "text": "Turn left at the traffic light."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "basic-08",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der nächsten Straße rechts.",
+      "en": "Right at the next street.",
+      "audio": "audio/ea052edcdeb8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "If nothing is said, continue straight ahead."
+        },
+        {
+          "id": "b",
+          "text": "Right at the next street."
+        },
+        {
+          "id": "c",
+          "text": "Turn left at the junction."
+        },
+        {
+          "id": "d",
+          "text": "Follow the priority road."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "basic-09",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der nächsten Straße links.",
+      "en": "Left at the next street.",
+      "audio": "audio/ede7f9c67e7a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Follow the course of the road."
+        },
+        {
+          "id": "b",
+          "text": "Follow the road."
+        },
+        {
+          "id": "c",
+          "text": "Left at the next street."
+        },
+        {
+          "id": "d",
+          "text": "Turn left at the next intersection."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "basic-10",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der nächsten Kreuzung rechts abbiegen.",
+      "en": "Turn right at the next intersection.",
+      "audio": "audio/e6376f9ebb85.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn right."
+        },
+        {
+          "id": "b",
+          "text": "Turn right at the next intersection."
+        },
+        {
+          "id": "c",
+          "text": "Turn left at the next opportunity."
+        },
+        {
+          "id": "d",
+          "text": "Drive straight ahead."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "basic-11",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der nächsten Kreuzung links abbiegen.",
+      "en": "Turn left at the next intersection.",
+      "audio": "audio/0d76ec76486d.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn right at the traffic light."
+        },
+        {
+          "id": "b",
+          "text": "Turn left at the next intersection."
+        },
+        {
+          "id": "c",
+          "text": "Right at the next street."
+        },
+        {
+          "id": "d",
+          "text": "Follow the course of the road."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "basic-12",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der Ampel rechts abbiegen.",
+      "en": "Turn right at the traffic light.",
+      "audio": "audio/4bec51deb373.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive straight ahead."
+        },
+        {
+          "id": "b",
+          "text": "Turn right at the traffic light."
+        },
+        {
+          "id": "c",
+          "text": "Continue straight ahead."
+        },
+        {
+          "id": "d",
+          "text": "If nothing is said, continue straight ahead."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "basic-13",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der Ampel links abbiegen.",
+      "en": "Turn left at the traffic light.",
+      "audio": "audio/b08e35e5231e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn left at the traffic light."
+        },
+        {
+          "id": "b",
+          "text": "Continue straight ahead."
+        },
+        {
+          "id": "c",
+          "text": "Please turn right."
+        },
+        {
+          "id": "d",
+          "text": "Drive toward the motorway."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "basic-14",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der Einmündung links abbiegen.",
+      "en": "Turn left at the junction.",
+      "audio": "audio/bbbf02d5b8e6.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn left."
+        },
+        {
+          "id": "b",
+          "text": "Drive toward the city center."
+        },
+        {
+          "id": "c",
+          "text": "Turn left at the junction."
+        },
+        {
+          "id": "d",
+          "text": "Turn left at the traffic light."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "basic-15",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der nächsten Möglichkeit rechts.",
+      "en": "Turn right at the next opportunity.",
+      "audio": "audio/426b78ed8515.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn right at the next opportunity."
+        },
+        {
+          "id": "b",
+          "text": "Left at the next street."
+        },
+        {
+          "id": "c",
+          "text": "Turn right at the traffic light."
+        },
+        {
+          "id": "d",
+          "text": "Follow the priority road."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "basic-16",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "An der nächsten Möglichkeit links.",
+      "en": "Turn left at the next opportunity.",
+      "audio": "audio/94104f23e2e2.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn right."
+        },
+        {
+          "id": "b",
+          "text": "If nothing is said, continue straight ahead."
+        },
+        {
+          "id": "c",
+          "text": "Turn left at the next opportunity."
+        },
+        {
+          "id": "d",
+          "text": "Drive straight ahead."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "basic-17",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Folgen Sie der Straße.",
+      "en": "Follow the road.",
+      "audio": "audio/c2883a085cd0.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive straight ahead."
+        },
+        {
+          "id": "b",
+          "text": "Left at the next street."
+        },
+        {
+          "id": "c",
+          "text": "Turn right at the next intersection."
+        },
+        {
+          "id": "d",
+          "text": "Follow the road."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "basic-18",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Folgen Sie dem Straßenverlauf.",
+      "en": "Follow the course of the road.",
+      "audio": "audio/f3e83cbf01e7.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn left at the next opportunity."
+        },
+        {
+          "id": "b",
+          "text": "Turn right at the traffic light."
+        },
+        {
+          "id": "c",
+          "text": "Follow the course of the road."
+        },
+        {
+          "id": "d",
+          "text": "Drive straight ahead."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "basic-19",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Folgen Sie der Vorfahrtsstraße.",
+      "en": "Follow the priority road.",
+      "audio": "audio/6e7015066fde.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive toward the motorway."
+        },
+        {
+          "id": "b",
+          "text": "Turn left."
+        },
+        {
+          "id": "c",
+          "text": "Turn left at the next intersection."
+        },
+        {
+          "id": "d",
+          "text": "Follow the priority road."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "basic-20",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie in Richtung Stadtmitte.",
+      "en": "Drive toward the city center.",
+      "audio": "audio/5b4fe8edb5bc.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn left at the next intersection."
+        },
+        {
+          "id": "b",
+          "text": "Turn left at the junction."
+        },
+        {
+          "id": "c",
+          "text": "Turn left."
+        },
+        {
+          "id": "d",
+          "text": "Drive toward the city center."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "basic-21",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie in Richtung Autobahn.",
+      "en": "Drive toward the motorway.",
+      "audio": "audio/5b794cc84898.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Follow the course of the road."
+        },
+        {
+          "id": "b",
+          "text": "Drive straight ahead."
+        },
+        {
+          "id": "c",
+          "text": "Turn left at the junction."
+        },
+        {
+          "id": "d",
+          "text": "Drive toward the motorway."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "basic-22",
+      "sit": "basic",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wenn nichts gesagt wird, fahren Sie geradeaus.",
+      "en": "If nothing is said, continue straight ahead.",
+      "audio": "audio/d0fd51ca69ef.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "If nothing is said, continue straight ahead."
+        },
+        {
+          "id": "b",
+          "text": "Follow the road."
+        },
+        {
+          "id": "c",
+          "text": "Turn left at the next intersection."
+        },
+        {
+          "id": "d",
+          "text": "Drive straight ahead."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "stopping-01",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bitte anhalten.",
+      "en": "Please stop.",
+      "audio": "audio/6514f2747b76.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop here."
+        },
+        {
+          "id": "b",
+          "text": "Stop by the blue car."
+        },
+        {
+          "id": "c",
+          "text": "Pull over to the right."
+        },
+        {
+          "id": "d",
+          "text": "Please stop."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "stopping-02",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie hier an.",
+      "en": "Stop here.",
+      "audio": "audio/c09a978d9892.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop here."
+        },
+        {
+          "id": "b",
+          "text": "Continue driving."
+        },
+        {
+          "id": "c",
+          "text": "Stop by the blue car."
+        },
+        {
+          "id": "d",
+          "text": "Stop in front of the green car."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "stopping-03",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie bitte rechts an.",
+      "en": "Stop on the right.",
+      "audio": "audio/83fe766d8f3a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop at a suitable location."
+        },
+        {
+          "id": "b",
+          "text": "Stop on the right."
+        },
+        {
+          "id": "c",
+          "text": "Remain stopped."
+        },
+        {
+          "id": "d",
+          "text": "Find a suitable place to stop."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "stopping-04",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie rechts ran.",
+      "en": "Pull over to the right.",
+      "audio": "audio/b28b0498ac5b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue driving."
+        },
+        {
+          "id": "b",
+          "text": "Pull over to the right edge of the road."
+        },
+        {
+          "id": "c",
+          "text": "Pull over to the right."
+        },
+        {
+          "id": "d",
+          "text": "Stop behind the red car."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "stopping-05",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie bitte an den rechten Fahrbahnrand.",
+      "en": "Pull over to the right edge of the road.",
+      "audio": "audio/afc9fe98858a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop as soon as possible."
+        },
+        {
+          "id": "b",
+          "text": "Please stop."
+        },
+        {
+          "id": "c",
+          "text": "Wait here."
+        },
+        {
+          "id": "d",
+          "text": "Pull over to the right edge of the road."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "stopping-06",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie bei dem blauen Auto an.",
+      "en": "Stop by the blue car.",
+      "audio": "audio/e1d2c88a90d9.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Wait here."
+        },
+        {
+          "id": "b",
+          "text": "Remain stopped."
+        },
+        {
+          "id": "c",
+          "text": "Stop behind the red car."
+        },
+        {
+          "id": "d",
+          "text": "Stop by the blue car."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "stopping-07",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie hinter dem roten Auto an.",
+      "en": "Stop behind the red car.",
+      "audio": "audio/a7b8151584f1.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "You may continue driving."
+        },
+        {
+          "id": "b",
+          "text": "Pull over to the right edge of the road."
+        },
+        {
+          "id": "c",
+          "text": "Stop behind the red car."
+        },
+        {
+          "id": "d",
+          "text": "Stop here."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "stopping-08",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie vor dem grünen Auto an.",
+      "en": "Stop in front of the green car.",
+      "audio": "audio/503d3a20eb9c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop here."
+        },
+        {
+          "id": "b",
+          "text": "Stop in front of the green car."
+        },
+        {
+          "id": "c",
+          "text": "Stop at a suitable location."
+        },
+        {
+          "id": "d",
+          "text": "Pull over to the right."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "stopping-09",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie an einer geeigneten Stelle an.",
+      "en": "Stop at a suitable location.",
+      "audio": "audio/3e7981eff4fd.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Wait here."
+        },
+        {
+          "id": "b",
+          "text": "Stop at a suitable location."
+        },
+        {
+          "id": "c",
+          "text": "Continue driving."
+        },
+        {
+          "id": "d",
+          "text": "Stop as soon as possible."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "stopping-10",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie an, sobald es möglich ist.",
+      "en": "Stop as soon as possible.",
+      "audio": "audio/2e497c494a69.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pull over to the right edge of the road."
+        },
+        {
+          "id": "b",
+          "text": "Stop here."
+        },
+        {
+          "id": "c",
+          "text": "Stop at a suitable location."
+        },
+        {
+          "id": "d",
+          "text": "Stop as soon as possible."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "stopping-11",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Suchen Sie sich eine geeignete Stelle zum Anhalten.",
+      "en": "Find a suitable place to stop.",
+      "audio": "audio/6fc7ab7ede9a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop by the blue car."
+        },
+        {
+          "id": "b",
+          "text": "Stop at a suitable location."
+        },
+        {
+          "id": "c",
+          "text": "Wait here."
+        },
+        {
+          "id": "d",
+          "text": "Find a suitable place to stop."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "stopping-12",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Warten Sie hier.",
+      "en": "Wait here.",
+      "audio": "audio/93c007ccd22a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop on the right."
+        },
+        {
+          "id": "b",
+          "text": "Pull over to the right."
+        },
+        {
+          "id": "c",
+          "text": "You may continue driving."
+        },
+        {
+          "id": "d",
+          "text": "Wait here."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "stopping-13",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bleiben Sie stehen.",
+      "en": "Remain stopped.",
+      "audio": "audio/24ecf5f5a45b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "You may continue driving."
+        },
+        {
+          "id": "b",
+          "text": "Remain stopped."
+        },
+        {
+          "id": "c",
+          "text": "Stop at a suitable location."
+        },
+        {
+          "id": "d",
+          "text": "Pull over to the right."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "stopping-14",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie weiter.",
+      "en": "Continue driving.",
+      "audio": "audio/d66a80689e5a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue driving."
+        },
+        {
+          "id": "b",
+          "text": "Find a suitable place to stop."
+        },
+        {
+          "id": "c",
+          "text": "Stop as soon as possible."
+        },
+        {
+          "id": "d",
+          "text": "Please stop."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "stopping-15",
+      "sit": "stopping",
+      "prompt": "Listen. What does this mean?",
+      "de": "Sie können weiterfahren.",
+      "en": "You may continue driving.",
+      "audio": "audio/6cba39ce3c8d.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Find a suitable place to stop."
+        },
+        {
+          "id": "b",
+          "text": "Stop in front of the green car."
+        },
+        {
+          "id": "c",
+          "text": "You may continue driving."
+        },
+        {
+          "id": "d",
+          "text": "Stop by the blue car."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "parking-01",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie hier ein.",
+      "en": "Park here.",
+      "audio": "audio/635a7b590a66.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Parallel park along the road."
+        },
+        {
+          "id": "b",
+          "text": "Reverse park to the right."
+        },
+        {
+          "id": "c",
+          "text": "Drive out of the parking space."
+        },
+        {
+          "id": "d",
+          "text": "Park here."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "parking-02",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie vorwärts ein.",
+      "en": "Park forward into the space.",
+      "audio": "audio/7e6a72f9f596.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park forward into the space."
+        },
+        {
+          "id": "b",
+          "text": "Reverse park to the left."
+        },
+        {
+          "id": "c",
+          "text": "Reverse park to the right."
+        },
+        {
+          "id": "d",
+          "text": "Parallel park."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "parking-03",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie rückwärts ein.",
+      "en": "Reverse into the space.",
+      "audio": "audio/7579982dcb3a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park in front of the red car."
+        },
+        {
+          "id": "b",
+          "text": "Park forward into the space."
+        },
+        {
+          "id": "c",
+          "text": "Drive into this parking space."
+        },
+        {
+          "id": "d",
+          "text": "Reverse into the space."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "parking-04",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie vorwärts links ein.",
+      "en": "Park forward to the left.",
+      "audio": "audio/6090c519523a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park forward to the left by the green car."
+        },
+        {
+          "id": "b",
+          "text": "Park forward to the left."
+        },
+        {
+          "id": "c",
+          "text": "Parallel park."
+        },
+        {
+          "id": "d",
+          "text": "Park here."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "parking-05",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie vorwärts rechts ein.",
+      "en": "Park forward to the right.",
+      "audio": "audio/5979b5b8b729.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park forward to the right."
+        },
+        {
+          "id": "b",
+          "text": "Parallel park."
+        },
+        {
+          "id": "c",
+          "text": "Drive out of the parking space."
+        },
+        {
+          "id": "d",
+          "text": "Leave the parking space."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "parking-06",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie rückwärts links ein.",
+      "en": "Reverse park to the left.",
+      "audio": "audio/40bcad07e64c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reverse park to the left."
+        },
+        {
+          "id": "b",
+          "text": "Leave the parking space."
+        },
+        {
+          "id": "c",
+          "text": "Park perpendicular to the road."
+        },
+        {
+          "id": "d",
+          "text": "Park forward to the left by the green car."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "parking-07",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie rückwärts rechts ein.",
+      "en": "Reverse park to the right.",
+      "audio": "audio/00bd22c0e2de.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Leave the parking space."
+        },
+        {
+          "id": "b",
+          "text": "Reverse park to the right."
+        },
+        {
+          "id": "c",
+          "text": "Park behind the blue car."
+        },
+        {
+          "id": "d",
+          "text": "Drive into this parking space."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "parking-08",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie hinter dem blauen Auto.",
+      "en": "Park behind the blue car.",
+      "audio": "audio/8b2fadcfa7e0.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park and secure the vehicle here."
+        },
+        {
+          "id": "b",
+          "text": "Park behind the blue car."
+        },
+        {
+          "id": "c",
+          "text": "Park in front of the red car."
+        },
+        {
+          "id": "d",
+          "text": "Park forward to the right by the red car."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "parking-09",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie vor dem roten Auto.",
+      "en": "Park in front of the red car.",
+      "audio": "audio/e3c947c38bb9.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park forward into the space."
+        },
+        {
+          "id": "b",
+          "text": "Park in front of the red car."
+        },
+        {
+          "id": "c",
+          "text": "Parallel park along the road."
+        },
+        {
+          "id": "d",
+          "text": "Drive out of the parking space."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "parking-10",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie zwischen den beiden Autos.",
+      "en": "Park between the two cars.",
+      "audio": "audio/d97aa159351f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park perpendicular to the road."
+        },
+        {
+          "id": "b",
+          "text": "Parallel park."
+        },
+        {
+          "id": "c",
+          "text": "Park between the two cars."
+        },
+        {
+          "id": "d",
+          "text": "Reverse park to the right."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "parking-11",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie neben dem grünen Auto.",
+      "en": "Park next to the green car.",
+      "audio": "audio/7cb6d360bae7.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park here."
+        },
+        {
+          "id": "b",
+          "text": "Reverse park to the left."
+        },
+        {
+          "id": "c",
+          "text": "Park between the two cars."
+        },
+        {
+          "id": "d",
+          "text": "Park next to the green car."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "parking-12",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie vorwärts links bei dem grünen Auto.",
+      "en": "Park forward to the left by the green car.",
+      "audio": "audio/794e390ab818.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park perpendicular to the road."
+        },
+        {
+          "id": "b",
+          "text": "Park forward to the left."
+        },
+        {
+          "id": "c",
+          "text": "Reverse park to the left."
+        },
+        {
+          "id": "d",
+          "text": "Park forward to the left by the green car."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "parking-13",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie vorwärts rechts bei dem roten Auto.",
+      "en": "Park forward to the right by the red car.",
+      "audio": "audio/72175e4b2d8f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park behind the blue car."
+        },
+        {
+          "id": "b",
+          "text": "Park forward to the right by the red car."
+        },
+        {
+          "id": "c",
+          "text": "Park next to the green car."
+        },
+        {
+          "id": "d",
+          "text": "Park forward into the space."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "parking-14",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie parallel zum Fahrbahnrand.",
+      "en": "Parallel park along the road.",
+      "audio": "audio/5ad4f617ed55.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Parallel park along the road."
+        },
+        {
+          "id": "b",
+          "text": "Park in front of the red car."
+        },
+        {
+          "id": "c",
+          "text": "Park forward to the left by the green car."
+        },
+        {
+          "id": "d",
+          "text": "Secure the vehicle."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "parking-15",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie längs ein.",
+      "en": "Parallel park.",
+      "audio": "audio/18254b8d2d5a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Secure the vehicle."
+        },
+        {
+          "id": "b",
+          "text": "Parallel park."
+        },
+        {
+          "id": "c",
+          "text": "Reverse park to the right."
+        },
+        {
+          "id": "d",
+          "text": "Park and secure the vehicle here."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "parking-16",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Parken Sie quer ein.",
+      "en": "Park perpendicular to the road.",
+      "audio": "audio/95e8ae61cf77.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park forward into the space."
+        },
+        {
+          "id": "b",
+          "text": "Park here."
+        },
+        {
+          "id": "c",
+          "text": "Park perpendicular to the road."
+        },
+        {
+          "id": "d",
+          "text": "Park between the two cars."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "parking-17",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie in diese Parklücke.",
+      "en": "Drive into this parking space.",
+      "audio": "audio/4d7305f9ca9e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Parallel park."
+        },
+        {
+          "id": "b",
+          "text": "Leave the parking space."
+        },
+        {
+          "id": "c",
+          "text": "Drive into this parking space."
+        },
+        {
+          "id": "d",
+          "text": "Park here."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "parking-18",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie aus der Parklücke heraus.",
+      "en": "Drive out of the parking space.",
+      "audio": "audio/80cc9695d6ea.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park forward to the left by the green car."
+        },
+        {
+          "id": "b",
+          "text": "Drive out of the parking space."
+        },
+        {
+          "id": "c",
+          "text": "Park here."
+        },
+        {
+          "id": "d",
+          "text": "Parallel park."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "parking-19",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Verlassen Sie die Parklücke.",
+      "en": "Leave the parking space.",
+      "audio": "audio/594d30555e46.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park forward to the right."
+        },
+        {
+          "id": "b",
+          "text": "Parallel park along the road."
+        },
+        {
+          "id": "c",
+          "text": "Leave the parking space."
+        },
+        {
+          "id": "d",
+          "text": "Park forward to the left."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "parking-20",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Stellen Sie das Fahrzeug hier ab.",
+      "en": "Park and secure the vehicle here.",
+      "audio": "audio/fcf7cd0dcd1b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park and secure the vehicle here."
+        },
+        {
+          "id": "b",
+          "text": "Park forward to the right by the red car."
+        },
+        {
+          "id": "c",
+          "text": "Drive out of the parking space."
+        },
+        {
+          "id": "d",
+          "text": "Park in front of the red car."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "parking-21",
+      "sit": "parking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Sichern Sie das Fahrzeug.",
+      "en": "Secure the vehicle.",
+      "audio": "audio/92e4b0552fbf.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park in front of the red car."
+        },
+        {
+          "id": "b",
+          "text": "Park forward into the space."
+        },
+        {
+          "id": "c",
+          "text": "Secure the vehicle."
+        },
+        {
+          "id": "d",
+          "text": "Park forward to the left."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "turning-01",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bitte wenden.",
+      "en": "Please turn around.",
+      "audio": "audio/3730935394f0.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Correct your position."
+        },
+        {
+          "id": "b",
+          "text": "Reverse."
+        },
+        {
+          "id": "c",
+          "text": "Please turn around."
+        },
+        {
+          "id": "d",
+          "text": "Find a suitable place to turn around."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "turning-02",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wenden Sie bei der nächsten Gelegenheit.",
+      "en": "Turn around at the next opportunity.",
+      "audio": "audio/fc6e45a769d9.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please turn around."
+        },
+        {
+          "id": "b",
+          "text": "Drive backward."
+        },
+        {
+          "id": "c",
+          "text": "Turn around at the next opportunity."
+        },
+        {
+          "id": "d",
+          "text": "Reverse in a straight line."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "turning-03",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Suchen Sie sich eine geeignete Stelle zum Wenden.",
+      "en": "Find a suitable place to turn around.",
+      "audio": "audio/6dff3ffd026e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please turn around."
+        },
+        {
+          "id": "b",
+          "text": "Reverse a short distance."
+        },
+        {
+          "id": "c",
+          "text": "Turn around at the next opportunity."
+        },
+        {
+          "id": "d",
+          "text": "Find a suitable place to turn around."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "turning-04",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Drehen Sie bitte um.",
+      "en": "Please turn around.",
+      "audio": "audio/cbb74d3675e8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please turn around."
+        },
+        {
+          "id": "b",
+          "text": "Reverse."
+        },
+        {
+          "id": "c",
+          "text": "Reverse a short distance."
+        },
+        {
+          "id": "d",
+          "text": "Correct your position."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "turning-05",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie rückwärts.",
+      "en": "Drive backward.",
+      "audio": "audio/d9aa468cdd05.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Find a suitable place to turn around."
+        },
+        {
+          "id": "b",
+          "text": "Reverse toward the right."
+        },
+        {
+          "id": "c",
+          "text": "Reverse around the corner."
+        },
+        {
+          "id": "d",
+          "text": "Drive backward."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "turning-06",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie ein Stück rückwärts.",
+      "en": "Reverse a short distance.",
+      "audio": "audio/1279ced22f52.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reverse toward the left."
+        },
+        {
+          "id": "b",
+          "text": "Reverse in a straight line."
+        },
+        {
+          "id": "c",
+          "text": "Reverse a short distance."
+        },
+        {
+          "id": "d",
+          "text": "Correct your position."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "turning-07",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie gerade rückwärts.",
+      "en": "Reverse in a straight line.",
+      "audio": "audio/3f5a76c91439.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please turn around."
+        },
+        {
+          "id": "b",
+          "text": "Reverse toward the left."
+        },
+        {
+          "id": "c",
+          "text": "Reverse in a straight line."
+        },
+        {
+          "id": "d",
+          "text": "Drive backward."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "turning-08",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie rückwärts um die Ecke.",
+      "en": "Reverse around the corner.",
+      "audio": "audio/4c66aaa0c4a1.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn around at the next opportunity."
+        },
+        {
+          "id": "b",
+          "text": "Reverse toward the left."
+        },
+        {
+          "id": "c",
+          "text": "Reverse around the corner."
+        },
+        {
+          "id": "d",
+          "text": "Reverse toward the right."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "turning-09",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie rückwärts nach rechts.",
+      "en": "Reverse toward the right.",
+      "audio": "audio/d604a8569b4f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please turn around."
+        },
+        {
+          "id": "b",
+          "text": "Reverse a short distance."
+        },
+        {
+          "id": "c",
+          "text": "Correct your position."
+        },
+        {
+          "id": "d",
+          "text": "Reverse toward the right."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "turning-10",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie rückwärts nach links.",
+      "en": "Reverse toward the left.",
+      "audio": "audio/6106d6b33da8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive backward."
+        },
+        {
+          "id": "b",
+          "text": "Please turn around."
+        },
+        {
+          "id": "c",
+          "text": "Reverse toward the left."
+        },
+        {
+          "id": "d",
+          "text": "Reverse around the corner."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "turning-11",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Setzen Sie zurück.",
+      "en": "Reverse.",
+      "audio": "audio/56deb60d72f4.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reverse in a straight line."
+        },
+        {
+          "id": "b",
+          "text": "Reverse around the corner."
+        },
+        {
+          "id": "c",
+          "text": "Reverse."
+        },
+        {
+          "id": "d",
+          "text": "Turn around at the next opportunity."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "turning-12",
+      "sit": "turning",
+      "prompt": "Listen. What does this mean?",
+      "de": "Korrigieren Sie Ihre Position.",
+      "en": "Correct your position.",
+      "audio": "audio/c2afb59608d3.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Find a suitable place to turn around."
+        },
+        {
+          "id": "b",
+          "text": "Correct your position."
+        },
+        {
+          "id": "c",
+          "text": "Reverse a short distance."
+        },
+        {
+          "id": "d",
+          "text": "Please turn around."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "braking-01",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Machen Sie eine Gefahrbremsung.",
+      "en": "Perform an emergency brake.",
+      "audio": "audio/35b6d1d742d8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Brake on my command."
+        },
+        {
+          "id": "b",
+          "text": "Perform an emergency brake."
+        },
+        {
+          "id": "c",
+          "text": "Brake now!"
+        },
+        {
+          "id": "d",
+          "text": "Drive at approximately 30 km/h."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "braking-02",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Führen Sie eine Gefahrbremsung durch.",
+      "en": "Perform an emergency braking maneuver.",
+      "audio": "audio/adbee3ab2aa7.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Accelerate to 30 km/h."
+        },
+        {
+          "id": "b",
+          "text": "Hold the steering wheel firmly."
+        },
+        {
+          "id": "c",
+          "text": "Perform a full emergency stop."
+        },
+        {
+          "id": "d",
+          "text": "Perform an emergency braking maneuver."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "braking-03",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Machen Sie eine Vollbremsung.",
+      "en": "Perform a full emergency stop.",
+      "audio": "audio/df5d3538cfb6.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hold the steering wheel firmly."
+        },
+        {
+          "id": "b",
+          "text": "Brake now!"
+        },
+        {
+          "id": "c",
+          "text": "Drive at approximately 30 km/h."
+        },
+        {
+          "id": "d",
+          "text": "Perform a full emergency stop."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "braking-04",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Beschleunigen Sie auf 30 km/h.",
+      "en": "Accelerate to 30 km/h.",
+      "audio": "audio/ceef83bd48a5.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Release the brake."
+        },
+        {
+          "id": "b",
+          "text": "Accelerate to 30 km/h."
+        },
+        {
+          "id": "c",
+          "text": "Brake on my command."
+        },
+        {
+          "id": "d",
+          "text": "Stay in your lane."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "braking-05",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie mit ungefähr 30 km/h.",
+      "en": "Drive at approximately 30 km/h.",
+      "audio": "audio/66e383c9a1a8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hold the steering wheel firmly."
+        },
+        {
+          "id": "b",
+          "text": "Perform an emergency brake."
+        },
+        {
+          "id": "c",
+          "text": "Drive at approximately 30 km/h."
+        },
+        {
+          "id": "d",
+          "text": "Accelerate to 30 km/h."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "braking-06",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bremsen Sie auf mein Kommando.",
+      "en": "Brake on my command.",
+      "audio": "audio/c3095e17cb1d.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stay in your lane."
+        },
+        {
+          "id": "b",
+          "text": "Perform an emergency braking maneuver."
+        },
+        {
+          "id": "c",
+          "text": "Hold the steering wheel firmly."
+        },
+        {
+          "id": "d",
+          "text": "Brake on my command."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "braking-07",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Jetzt bremsen!",
+      "en": "Brake now!",
+      "audio": "audio/8d5cd5862a2f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Brake now!"
+        },
+        {
+          "id": "b",
+          "text": "Brake on my command."
+        },
+        {
+          "id": "c",
+          "text": "Accelerate to 30 km/h."
+        },
+        {
+          "id": "d",
+          "text": "Drive at approximately 30 km/h."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "braking-08",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bremsen Sie so stark wie möglich.",
+      "en": "Brake as hard as possible.",
+      "audio": "audio/fb209d58a97d.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Brake as hard as possible."
+        },
+        {
+          "id": "b",
+          "text": "Drive at approximately 30 km/h."
+        },
+        {
+          "id": "c",
+          "text": "Release the brake."
+        },
+        {
+          "id": "d",
+          "text": "Perform an emergency braking maneuver."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "braking-09",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie das Lenkrad fest.",
+      "en": "Hold the steering wheel firmly.",
+      "audio": "audio/87e1a2869931.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue driving."
+        },
+        {
+          "id": "b",
+          "text": "Stay in your lane."
+        },
+        {
+          "id": "c",
+          "text": "Release the brake."
+        },
+        {
+          "id": "d",
+          "text": "Hold the steering wheel firmly."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "braking-10",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bleiben Sie in Ihrer Spur.",
+      "en": "Stay in your lane.",
+      "audio": "audio/d96c38dc0966.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Remain stopped."
+        },
+        {
+          "id": "b",
+          "text": "Brake as hard as possible."
+        },
+        {
+          "id": "c",
+          "text": "Hold the steering wheel firmly."
+        },
+        {
+          "id": "d",
+          "text": "Stay in your lane."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "braking-11",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bleiben Sie stehen.",
+      "en": "Remain stopped.",
+      "audio": "audio/24ecf5f5a45b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Release the brake."
+        },
+        {
+          "id": "b",
+          "text": "Remain stopped."
+        },
+        {
+          "id": "c",
+          "text": "Brake as hard as possible."
+        },
+        {
+          "id": "d",
+          "text": "Drive at approximately 30 km/h."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "braking-12",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Lösen Sie die Bremse.",
+      "en": "Release the brake.",
+      "audio": "audio/8fbeaf1ac821.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Release the brake."
+        },
+        {
+          "id": "b",
+          "text": "Remain stopped."
+        },
+        {
+          "id": "c",
+          "text": "Stay in your lane."
+        },
+        {
+          "id": "d",
+          "text": "Accelerate to 30 km/h."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "braking-13",
+      "sit": "braking",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie weiter.",
+      "en": "Continue driving.",
+      "audio": "audio/d66a80689e5a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Remain stopped."
+        },
+        {
+          "id": "b",
+          "text": "Continue driving."
+        },
+        {
+          "id": "c",
+          "text": "Brake now!"
+        },
+        {
+          "id": "d",
+          "text": "Brake as hard as possible."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "lanes-01",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wechseln Sie die Spur.",
+      "en": "Change lanes.",
+      "audio": "audio/f5930534ec84.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Adjust your speed."
+        },
+        {
+          "id": "b",
+          "text": "Continue in the left lane."
+        },
+        {
+          "id": "c",
+          "text": "Change lanes."
+        },
+        {
+          "id": "d",
+          "text": "Change to the left lane."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "lanes-02",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wechseln Sie auf die rechte Spur.",
+      "en": "Change to the right lane.",
+      "audio": "audio/145849022336.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Accelerate."
+        },
+        {
+          "id": "b",
+          "text": "Change to the right lane."
+        },
+        {
+          "id": "c",
+          "text": "Overtake when possible and permitted."
+        },
+        {
+          "id": "d",
+          "text": "Drive at 30 km/h."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "lanes-03",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wechseln Sie auf die linke Spur.",
+      "en": "Change to the left lane.",
+      "audio": "audio/b47d16fff97f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue in the right lane."
+        },
+        {
+          "id": "b",
+          "text": "Change to the left lane."
+        },
+        {
+          "id": "c",
+          "text": "Maintain your speed."
+        },
+        {
+          "id": "d",
+          "text": "Change to the right lane."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "lanes-04",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Ordnen Sie sich rechts ein.",
+      "en": "Position yourself in the right lane.",
+      "audio": "audio/22428033e7f4.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Accelerate."
+        },
+        {
+          "id": "b",
+          "text": "Drive a little slower."
+        },
+        {
+          "id": "c",
+          "text": "Position yourself in the right lane."
+        },
+        {
+          "id": "d",
+          "text": "Drive at 30 km/h."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "lanes-05",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Ordnen Sie sich links ein.",
+      "en": "Position yourself in the left lane.",
+      "audio": "audio/6cdd41c575e6.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Adjust your speed."
+        },
+        {
+          "id": "b",
+          "text": "Drive a little slower."
+        },
+        {
+          "id": "c",
+          "text": "Change to the right lane."
+        },
+        {
+          "id": "d",
+          "text": "Position yourself in the left lane."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lanes-06",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie auf der rechten Spur weiter.",
+      "en": "Continue in the right lane.",
+      "audio": "audio/1901c303e768.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reduce your speed."
+        },
+        {
+          "id": "b",
+          "text": "Position yourself in the right lane."
+        },
+        {
+          "id": "c",
+          "text": "Maintain your speed."
+        },
+        {
+          "id": "d",
+          "text": "Continue in the right lane."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lanes-07",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie auf der linken Spur weiter.",
+      "en": "Continue in the left lane.",
+      "audio": "audio/d04d3d6aab9b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue in the left lane."
+        },
+        {
+          "id": "b",
+          "text": "Change lanes."
+        },
+        {
+          "id": "c",
+          "text": "Change to the left lane."
+        },
+        {
+          "id": "d",
+          "text": "Maintain your speed."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "lanes-08",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie etwas langsamer.",
+      "en": "Drive a little slower.",
+      "audio": "audio/4f635d7e07b2.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Keep sufficient distance."
+        },
+        {
+          "id": "b",
+          "text": "Continue in the left lane."
+        },
+        {
+          "id": "c",
+          "text": "Drive a little slower."
+        },
+        {
+          "id": "d",
+          "text": "Change to the left lane."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "lanes-09",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Reduzieren Sie die Geschwindigkeit.",
+      "en": "Reduce your speed.",
+      "audio": "audio/a66b7a24592c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Change to the left lane."
+        },
+        {
+          "id": "b",
+          "text": "Reduce your speed."
+        },
+        {
+          "id": "c",
+          "text": "Keep sufficient distance."
+        },
+        {
+          "id": "d",
+          "text": "Continue in the right lane."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "lanes-10",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Passen Sie Ihre Geschwindigkeit an.",
+      "en": "Adjust your speed.",
+      "audio": "audio/1300cc43bb57.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive a little slower."
+        },
+        {
+          "id": "b",
+          "text": "Reduce your speed."
+        },
+        {
+          "id": "c",
+          "text": "Change to the left lane."
+        },
+        {
+          "id": "d",
+          "text": "Adjust your speed."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lanes-11",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Beschleunigen Sie.",
+      "en": "Accelerate.",
+      "audio": "audio/ed69e8e5e5a8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Accelerate."
+        },
+        {
+          "id": "b",
+          "text": "Drive at 50 km/h."
+        },
+        {
+          "id": "c",
+          "text": "Maintain your speed."
+        },
+        {
+          "id": "d",
+          "text": "Change to the right lane."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "lanes-12",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie die Geschwindigkeit.",
+      "en": "Maintain your speed.",
+      "audio": "audio/4171364e55d9.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Adjust your speed."
+        },
+        {
+          "id": "b",
+          "text": "Keep sufficient distance."
+        },
+        {
+          "id": "c",
+          "text": "Change to the right lane."
+        },
+        {
+          "id": "d",
+          "text": "Maintain your speed."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lanes-13",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie mit 30 km/h.",
+      "en": "Drive at 30 km/h.",
+      "audio": "audio/0078f21e23c1.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive at 30 km/h."
+        },
+        {
+          "id": "b",
+          "text": "Maintain your speed."
+        },
+        {
+          "id": "c",
+          "text": "Drive at 50 km/h."
+        },
+        {
+          "id": "d",
+          "text": "Position yourself in the left lane."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "lanes-14",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie mit 50 km/h.",
+      "en": "Drive at 50 km/h.",
+      "audio": "audio/fee17f993bb4.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive at 50 km/h."
+        },
+        {
+          "id": "b",
+          "text": "Accelerate."
+        },
+        {
+          "id": "c",
+          "text": "Overtake when possible and permitted."
+        },
+        {
+          "id": "d",
+          "text": "Reduce your speed."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "lanes-15",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Überholen Sie, wenn es möglich und erlaubt ist.",
+      "en": "Overtake when possible and permitted.",
+      "audio": "audio/44a3761ede2c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive at 50 km/h."
+        },
+        {
+          "id": "b",
+          "text": "Drive a little slower."
+        },
+        {
+          "id": "c",
+          "text": "Keep sufficient distance."
+        },
+        {
+          "id": "d",
+          "text": "Overtake when possible and permitted."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lanes-16",
+      "sit": "lanes",
+      "prompt": "Listen. What does this mean?",
+      "de": "Halten Sie genügend Abstand.",
+      "en": "Keep sufficient distance.",
+      "audio": "audio/535adb85d6e3.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive at 30 km/h."
+        },
+        {
+          "id": "b",
+          "text": "Accelerate."
+        },
+        {
+          "id": "c",
+          "text": "Keep sufficient distance."
+        },
+        {
+          "id": "d",
+          "text": "Position yourself in the right lane."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "roundabouts-01",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie in den Kreisverkehr.",
+      "en": "Enter the roundabout.",
+      "audio": "audio/48e657c6298b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exit the roundabout."
+        },
+        {
+          "id": "b",
+          "text": "Enter the deceleration lane."
+        },
+        {
+          "id": "c",
+          "text": "Drive toward Karlsruhe."
+        },
+        {
+          "id": "d",
+          "text": "Enter the roundabout."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "roundabouts-02",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Nehmen Sie die erste Ausfahrt.",
+      "en": "Take the first exit.",
+      "audio": "audio/6d87e1144355.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Take the next entrance ramp."
+        },
+        {
+          "id": "b",
+          "text": "Take the first exit."
+        },
+        {
+          "id": "c",
+          "text": "Follow the signs toward the center."
+        },
+        {
+          "id": "d",
+          "text": "Take the second exit."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "roundabouts-03",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Nehmen Sie die zweite Ausfahrt.",
+      "en": "Take the second exit.",
+      "audio": "audio/94237c9d984e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enter the acceleration lane."
+        },
+        {
+          "id": "b",
+          "text": "Take the third exit."
+        },
+        {
+          "id": "c",
+          "text": "Enter the deceleration lane."
+        },
+        {
+          "id": "d",
+          "text": "Take the second exit."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "roundabouts-04",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Nehmen Sie die dritte Ausfahrt.",
+      "en": "Take the third exit.",
+      "audio": "audio/a29c777b5a80.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Take the next exit."
+        },
+        {
+          "id": "b",
+          "text": "Enter the motorway."
+        },
+        {
+          "id": "c",
+          "text": "Take the third exit."
+        },
+        {
+          "id": "d",
+          "text": "Take the next entrance ramp."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "roundabouts-05",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Verlassen Sie den Kreisverkehr.",
+      "en": "Exit the roundabout.",
+      "audio": "audio/04e3c3b332eb.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enter the federal highway."
+        },
+        {
+          "id": "b",
+          "text": "Exit the roundabout."
+        },
+        {
+          "id": "c",
+          "text": "Take the second exit."
+        },
+        {
+          "id": "d",
+          "text": "Enter the motorway."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "roundabouts-06",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie auf die Autobahn.",
+      "en": "Enter the motorway.",
+      "audio": "audio/039bc618600d.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Take the next entrance ramp."
+        },
+        {
+          "id": "b",
+          "text": "Take the third exit."
+        },
+        {
+          "id": "c",
+          "text": "Leave the motorway at the next exit."
+        },
+        {
+          "id": "d",
+          "text": "Enter the motorway."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "roundabouts-07",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie auf die Bundesstraße.",
+      "en": "Enter the federal highway.",
+      "audio": "audio/437aa72245d2.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enter the federal highway."
+        },
+        {
+          "id": "b",
+          "text": "Take the second exit."
+        },
+        {
+          "id": "c",
+          "text": "Enter the roundabout."
+        },
+        {
+          "id": "d",
+          "text": "Take the third exit."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "roundabouts-08",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Nehmen Sie die nächste Auffahrt.",
+      "en": "Take the next entrance ramp.",
+      "audio": "audio/a74fb5d0a302.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Take the next entrance ramp."
+        },
+        {
+          "id": "b",
+          "text": "Enter the federal highway."
+        },
+        {
+          "id": "c",
+          "text": "Leave the motorway at the next exit."
+        },
+        {
+          "id": "d",
+          "text": "Enter the motorway."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "roundabouts-09",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Nehmen Sie die nächste Ausfahrt.",
+      "en": "Take the next exit.",
+      "audio": "audio/f00a13b74afd.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Follow the signs toward the center."
+        },
+        {
+          "id": "b",
+          "text": "Enter the motorway."
+        },
+        {
+          "id": "c",
+          "text": "Take the first exit."
+        },
+        {
+          "id": "d",
+          "text": "Take the next exit."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "roundabouts-10",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Verlassen Sie die Autobahn an der nächsten Ausfahrt.",
+      "en": "Leave the motorway at the next exit.",
+      "audio": "audio/4fd9be4c0eb7.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Follow the signs toward the center."
+        },
+        {
+          "id": "b",
+          "text": "Enter the acceleration lane."
+        },
+        {
+          "id": "c",
+          "text": "Drive toward Karlsruhe."
+        },
+        {
+          "id": "d",
+          "text": "Leave the motorway at the next exit."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "roundabouts-11",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie Richtung Karlsruhe.",
+      "en": "Drive toward Karlsruhe.",
+      "audio": "audio/3cfe29ab4899.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enter the roundabout."
+        },
+        {
+          "id": "b",
+          "text": "Take the second exit."
+        },
+        {
+          "id": "c",
+          "text": "Drive toward Karlsruhe."
+        },
+        {
+          "id": "d",
+          "text": "Enter the deceleration lane."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "roundabouts-12",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Folgen Sie den Schildern Richtung Zentrum.",
+      "en": "Follow the signs toward the center.",
+      "audio": "audio/989c737389a5.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Follow the signs toward the center."
+        },
+        {
+          "id": "b",
+          "text": "Enter the federal highway."
+        },
+        {
+          "id": "c",
+          "text": "Take the first exit."
+        },
+        {
+          "id": "d",
+          "text": "Take the next exit."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "roundabouts-13",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie auf die Beschleunigungsspur.",
+      "en": "Enter the acceleration lane.",
+      "audio": "audio/549356226bb6.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enter the acceleration lane."
+        },
+        {
+          "id": "b",
+          "text": "Take the next exit."
+        },
+        {
+          "id": "c",
+          "text": "Take the third exit."
+        },
+        {
+          "id": "d",
+          "text": "Enter the motorway."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "roundabouts-14",
+      "sit": "roundabouts",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie auf die Verzögerungsspur.",
+      "en": "Enter the deceleration lane.",
+      "audio": "audio/1c1e0c7f0858.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enter the deceleration lane."
+        },
+        {
+          "id": "b",
+          "text": "Enter the motorway."
+        },
+        {
+          "id": "c",
+          "text": "Take the first exit."
+        },
+        {
+          "id": "d",
+          "text": "Take the next entrance ramp."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "lights-01",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie das Abblendlicht ein.",
+      "en": "Switch on the low-beam headlights.",
+      "audio": "audio/e3d15810e712.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the low beams."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the parking lights."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the low-beam headlights."
+        },
+        {
+          "id": "d",
+          "text": "Show me the parking lights."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "lights-02",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie das Fernlicht ein.",
+      "en": "Switch on the high-beam headlights.",
+      "audio": "audio/777ce9f353b8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch on the low-beam headlights."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the high-beam headlights."
+        },
+        {
+          "id": "c",
+          "text": "Flash the headlights."
+        },
+        {
+          "id": "d",
+          "text": "Switch off the lights."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "lights-03",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie das Standlicht ein.",
+      "en": "Switch on the parking lights.",
+      "audio": "audio/ba47745de2ec.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch on the hazard warning lights."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the parking lights."
+        },
+        {
+          "id": "c",
+          "text": "Flash the headlights."
+        },
+        {
+          "id": "d",
+          "text": "Show me the parking lights."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "lights-04",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie die Nebelschlussleuchte ein.",
+      "en": "Switch on the rear fog light.",
+      "audio": "audio/29d64ec61ebc.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch on the rear fog light."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the parking lights."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the high-beam headlights."
+        },
+        {
+          "id": "d",
+          "text": "Show me the brake lights."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "lights-05",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir das Standlicht.",
+      "en": "Show me the parking lights.",
+      "audio": "audio/25994e8c6aa5.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the brake lights."
+        },
+        {
+          "id": "b",
+          "text": "Show me the low beams."
+        },
+        {
+          "id": "c",
+          "text": "Activate the right turn signal."
+        },
+        {
+          "id": "d",
+          "text": "Show me the parking lights."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lights-06",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir das Abblendlicht.",
+      "en": "Show me the low beams.",
+      "audio": "audio/9a8e067feef8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch off the lights."
+        },
+        {
+          "id": "b",
+          "text": "Show me the low beams."
+        },
+        {
+          "id": "c",
+          "text": "Show me the reversing light."
+        },
+        {
+          "id": "d",
+          "text": "Switch on the high-beam headlights."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "lights-07",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir das Fernlicht.",
+      "en": "Show me the high beams.",
+      "audio": "audio/8f4a0f11d6ba.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the parking lights."
+        },
+        {
+          "id": "b",
+          "text": "Show me the brake lights."
+        },
+        {
+          "id": "c",
+          "text": "Activate the right turn signal."
+        },
+        {
+          "id": "d",
+          "text": "Show me the high beams."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lights-08",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Betätigen Sie die Lichthupe.",
+      "en": "Flash the headlights.",
+      "audio": "audio/669dbd21681e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the parking lights."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the hazard warning lights."
+        },
+        {
+          "id": "c",
+          "text": "Flash the headlights."
+        },
+        {
+          "id": "d",
+          "text": "Show me the brake lights."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "lights-09",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie die Nebelscheinwerfer ein.",
+      "en": "Switch on the front fog lights.",
+      "audio": "audio/0bf15eb904ab.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the reversing light."
+        },
+        {
+          "id": "b",
+          "text": "Flash the headlights."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the rear fog light."
+        },
+        {
+          "id": "d",
+          "text": "Switch on the front fog lights."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lights-10",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie die Warnblinkanlage ein.",
+      "en": "Switch on the hazard warning lights.",
+      "audio": "audio/61520b8e97d2.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the low beams."
+        },
+        {
+          "id": "b",
+          "text": "Switch off the lights."
+        },
+        {
+          "id": "c",
+          "text": "Show me the high beams."
+        },
+        {
+          "id": "d",
+          "text": "Switch on the hazard warning lights."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "lights-11",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie die Warnblinkanlage aus.",
+      "en": "Switch off the hazard lights.",
+      "audio": "audio/a8f435c8a593.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the reversing light."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the rear fog light."
+        },
+        {
+          "id": "c",
+          "text": "Switch off the hazard lights."
+        },
+        {
+          "id": "d",
+          "text": "Show me the brake lights."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "lights-12",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Betätigen Sie den linken Blinker.",
+      "en": "Activate the left turn signal.",
+      "audio": "audio/89cb2ee1dcaa.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Activate the left turn signal."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the parking lights."
+        },
+        {
+          "id": "c",
+          "text": "Show me the parking lights."
+        },
+        {
+          "id": "d",
+          "text": "Switch on the rear fog light."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "lights-13",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Betätigen Sie den rechten Blinker.",
+      "en": "Activate the right turn signal.",
+      "audio": "audio/30fec8bcca91.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the brake lights."
+        },
+        {
+          "id": "b",
+          "text": "Activate the right turn signal."
+        },
+        {
+          "id": "c",
+          "text": "Switch off the lights."
+        },
+        {
+          "id": "d",
+          "text": "Activate the left turn signal."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "lights-14",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir die Bremslichter.",
+      "en": "Show me the brake lights.",
+      "audio": "audio/f8274d577991.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the brake lights."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the front fog lights."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the low-beam headlights."
+        },
+        {
+          "id": "d",
+          "text": "Show me the low beams."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "lights-15",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir das Rückfahrlicht.",
+      "en": "Show me the reversing light.",
+      "audio": "audio/846ecc86b9ad.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the high beams."
+        },
+        {
+          "id": "b",
+          "text": "Show me the parking lights."
+        },
+        {
+          "id": "c",
+          "text": "Show me the reversing light."
+        },
+        {
+          "id": "d",
+          "text": "Activate the left turn signal."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "lights-16",
+      "sit": "lights",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie das Licht aus.",
+      "en": "Switch off the lights.",
+      "audio": "audio/130298153278.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the low beams."
+        },
+        {
+          "id": "b",
+          "text": "Show me the parking lights."
+        },
+        {
+          "id": "c",
+          "text": "Activate the left turn signal."
+        },
+        {
+          "id": "d",
+          "text": "Switch off the lights."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "tires-01",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Was kontrollieren Sie an den Reifen?",
+      "en": "What do you check on the tires?",
+      "audio": "audio/b1eefcf04cd0.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What do you check on the tires?"
+        },
+        {
+          "id": "b",
+          "text": "How do you check tire pressure?"
+        },
+        {
+          "id": "c",
+          "text": "What must you pay attention to regarding the tires?"
+        },
+        {
+          "id": "d",
+          "text": "What is the minimum tread depth?"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "tires-02",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Was müssen Sie bei den Reifen beachten?",
+      "en": "What must you pay attention to regarding the tires?",
+      "audio": "audio/4b799c0e80da.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What do you inspect on the tires?"
+        },
+        {
+          "id": "b",
+          "text": "What must you pay attention to regarding the tires?"
+        },
+        {
+          "id": "c",
+          "text": "What is the minimum tread depth?"
+        },
+        {
+          "id": "d",
+          "text": "Where do you find the correct tire pressure?"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "tires-03",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wie tief muss das Reifenprofil mindestens sein?",
+      "en": "What is the minimum required tire tread depth?",
+      "audio": "audio/f60743cb5731.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where do you find the correct tire pressure?"
+        },
+        {
+          "id": "b",
+          "text": "Show me the tread wear indicator."
+        },
+        {
+          "id": "c",
+          "text": "What do you inspect on the tires?"
+        },
+        {
+          "id": "d",
+          "text": "What is the minimum required tire tread depth?"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "tires-04",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wie viel beträgt die Mindestprofiltiefe?",
+      "en": "What is the minimum tread depth?",
+      "audio": "audio/a0b731467543.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the tread wear indicator."
+        },
+        {
+          "id": "b",
+          "text": "The tires must not be damaged. The air pressure must be correct. The minimum tread depth is 1.6 millimeters. There must be no foreign objects in the tire."
+        },
+        {
+          "id": "c",
+          "text": "Are the tires damaged?"
+        },
+        {
+          "id": "d",
+          "text": "What is the minimum tread depth?"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "tires-05",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wie kontrollieren Sie den Reifendruck?",
+      "en": "How do you check tire pressure?",
+      "audio": "audio/dde73a2a50bf.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "How do you check tire pressure?"
+        },
+        {
+          "id": "b",
+          "text": "The tires must not be damaged. The air pressure must be correct. The minimum tread depth is 1.6 millimeters. There must be no foreign objects in the tire."
+        },
+        {
+          "id": "c",
+          "text": "Show me the tread wear indicator."
+        },
+        {
+          "id": "d",
+          "text": "What is the minimum tread depth?"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "tires-06",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wo finden Sie den richtigen Reifendruck?",
+      "en": "Where do you find the correct tire pressure?",
+      "audio": "audio/6a5754dd9d12.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What must you pay attention to regarding the tires?"
+        },
+        {
+          "id": "b",
+          "text": "Where do you find the correct tire pressure?"
+        },
+        {
+          "id": "c",
+          "text": "What do you inspect on the tires?"
+        },
+        {
+          "id": "d",
+          "text": "Show me the tread wear indicator."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "tires-07",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Sind die Reifen beschädigt?",
+      "en": "Are the tires damaged?",
+      "audio": "audio/4551c54dec66.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What must you pay attention to regarding the tires?"
+        },
+        {
+          "id": "b",
+          "text": "What is the minimum required tire tread depth?"
+        },
+        {
+          "id": "c",
+          "text": "Where do you find the correct tire pressure?"
+        },
+        {
+          "id": "d",
+          "text": "Are the tires damaged?"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "tires-08",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Was überprüfen Sie an den Reifen?",
+      "en": "What do you inspect on the tires?",
+      "audio": "audio/051485c71ac5.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What is the minimum tread depth?"
+        },
+        {
+          "id": "b",
+          "text": "Show me the tread wear indicator."
+        },
+        {
+          "id": "c",
+          "text": "What do you inspect on the tires?"
+        },
+        {
+          "id": "d",
+          "text": "What must you pay attention to regarding the tires?"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "tires-09",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir die Verschleißanzeige.",
+      "en": "Show me the tread wear indicator.",
+      "audio": "audio/2b5b88ce77c1.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the tread wear indicator."
+        },
+        {
+          "id": "b",
+          "text": "What is the minimum tread depth?"
+        },
+        {
+          "id": "c",
+          "text": "Are the tires damaged?"
+        },
+        {
+          "id": "d",
+          "text": "What is the minimum required tire tread depth?"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "tires-10",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Was bedeutet diese Anzeige?",
+      "en": "What does this indicator mean?",
+      "audio": "audio/f87166cc11b7.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What is the minimum required tire tread depth?"
+        },
+        {
+          "id": "b",
+          "text": "What does this indicator mean?"
+        },
+        {
+          "id": "c",
+          "text": "Show me the tread wear indicator."
+        },
+        {
+          "id": "d",
+          "text": "What must you pay attention to regarding the tires?"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "tires-11",
+      "sit": "tires",
+      "prompt": "Listen. What does this mean?",
+      "de": "Die Reifen dürfen nicht beschädigt sein. Der Luftdruck muss stimmen. Die Mindestprofiltiefe beträgt 1,6 Millimeter. Es dürfen keine Fremdkörper im Reifen sein.",
+      "en": "The tires must not be damaged. The air pressure must be correct. The minimum tread depth is 1.6 millimeters. There must be no foreign objects in the tire.",
+      "audio": "audio/07179b6729a7.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The tires must not be damaged. The air pressure must be correct. The minimum tread depth is 1.6 millimeters. There must be no foreign objects in the tire."
+        },
+        {
+          "id": "b",
+          "text": "How do you check tire pressure?"
+        },
+        {
+          "id": "c",
+          "text": "Show me the tread wear indicator."
+        },
+        {
+          "id": "d",
+          "text": "What do you inspect on the tires?"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "reflectors-01",
+      "sit": "reflectors",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir die Rückstrahler.",
+      "en": "Show me the rear reflectors.",
+      "audio": "audio/21f6b3955aca.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Are the reflectors in good condition?"
+        },
+        {
+          "id": "b",
+          "text": "The reflectors must be present, clean, and undamaged."
+        },
+        {
+          "id": "c",
+          "text": "Where are the rear reflectors?"
+        },
+        {
+          "id": "d",
+          "text": "Show me the rear reflectors."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "reflectors-02",
+      "sit": "reflectors",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wo befinden sich die Rückstrahler?",
+      "en": "Where are the rear reflectors?",
+      "audio": "audio/33fe5b358342.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The reflectors must be present, clean, and undamaged."
+        },
+        {
+          "id": "b",
+          "text": "Are the reflectors in good condition?"
+        },
+        {
+          "id": "c",
+          "text": "Where are the rear reflectors?"
+        },
+        {
+          "id": "d",
+          "text": "Show me the rear reflectors."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "reflectors-03",
+      "sit": "reflectors",
+      "prompt": "Listen. What does this mean?",
+      "de": "Was müssen Sie bei den Reflektoren kontrollieren?",
+      "en": "What must you check on the reflectors?",
+      "audio": "audio/6f71631d18e8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What must you check on the reflectors?"
+        },
+        {
+          "id": "b",
+          "text": "Show me the rear reflectors."
+        },
+        {
+          "id": "c",
+          "text": "The reflectors must be present, clean, and undamaged."
+        },
+        {
+          "id": "d",
+          "text": "Are the reflectors in good condition?"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "reflectors-04",
+      "sit": "reflectors",
+      "prompt": "Listen. What does this mean?",
+      "de": "Sind die Reflektoren in Ordnung?",
+      "en": "Are the reflectors in good condition?",
+      "audio": "audio/930815597ef4.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The reflectors must be present, clean, and undamaged."
+        },
+        {
+          "id": "b",
+          "text": "Show me the rear reflectors."
+        },
+        {
+          "id": "c",
+          "text": "What must you check on the reflectors?"
+        },
+        {
+          "id": "d",
+          "text": "Are the reflectors in good condition?"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "reflectors-05",
+      "sit": "reflectors",
+      "prompt": "Listen. What does this mean?",
+      "de": "Was ist bei den Rückstrahlern wichtig?",
+      "en": "What is important about the reflectors?",
+      "audio": "audio/859e3f024c7c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What is important about the reflectors?"
+        },
+        {
+          "id": "b",
+          "text": "What must you check on the reflectors?"
+        },
+        {
+          "id": "c",
+          "text": "Are the reflectors in good condition?"
+        },
+        {
+          "id": "d",
+          "text": "The reflectors must be present, clean, and undamaged."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "reflectors-06",
+      "sit": "reflectors",
+      "prompt": "Listen. What does this mean?",
+      "de": "Die Reflektoren müssen vorhanden, sauber und unbeschädigt sein.",
+      "en": "The reflectors must be present, clean, and undamaged.",
+      "audio": "audio/e1980bbecd6b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where are the rear reflectors?"
+        },
+        {
+          "id": "b",
+          "text": "Show me the rear reflectors."
+        },
+        {
+          "id": "c",
+          "text": "The reflectors must be present, clean, and undamaged."
+        },
+        {
+          "id": "d",
+          "text": "What is important about the reflectors?"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "hood-01",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir, wo man das Motoröl kontrolliert.",
+      "en": "Show me where you check the engine oil.",
+      "audio": "audio/a4d4fb575ace.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me where you check the engine oil."
+        },
+        {
+          "id": "b",
+          "text": "Where is the windshield washer fluid?"
+        },
+        {
+          "id": "c",
+          "text": "Where do you refill washer fluid?"
+        },
+        {
+          "id": "d",
+          "text": "Please open the hood."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "hood-02",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir, wo man das Waschwasser nachfüllt.",
+      "en": "Show me where you refill the windshield washer fluid.",
+      "audio": "audio/875fef734f8c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where do you refill washer fluid?"
+        },
+        {
+          "id": "b",
+          "text": "Please open the hood."
+        },
+        {
+          "id": "c",
+          "text": "Where do you add engine oil?"
+        },
+        {
+          "id": "d",
+          "text": "Show me where you refill the windshield washer fluid."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "hood-03",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir den Kühlmittelbehälter.",
+      "en": "Show me the coolant reservoir.",
+      "audio": "audio/bd41b064d788.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "What do the MIN and MAX markings mean?"
+        },
+        {
+          "id": "b",
+          "text": "Where is the engine oil?"
+        },
+        {
+          "id": "c",
+          "text": "Show me the coolant reservoir."
+        },
+        {
+          "id": "d",
+          "text": "Where is the coolant?"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "hood-04",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Öffnen Sie bitte die Motorhaube.",
+      "en": "Please open the hood.",
+      "audio": "audio/913598a8cd14.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where is the coolant?"
+        },
+        {
+          "id": "b",
+          "text": "Where is the engine oil?"
+        },
+        {
+          "id": "c",
+          "text": "Where do you add engine oil?"
+        },
+        {
+          "id": "d",
+          "text": "Please open the hood."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "hood-05",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schließen Sie bitte die Motorhaube.",
+      "en": "Please close the hood.",
+      "audio": "audio/145218c045f1.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "How do you check the oil level?"
+        },
+        {
+          "id": "b",
+          "text": "Please close the hood."
+        },
+        {
+          "id": "c",
+          "text": "Please open the hood."
+        },
+        {
+          "id": "d",
+          "text": "Show me where you check the engine oil."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "hood-06",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wo befindet sich das Motoröl?",
+      "en": "Where is the engine oil?",
+      "audio": "audio/199251467913.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the coolant reservoir."
+        },
+        {
+          "id": "b",
+          "text": "Where is the engine oil?"
+        },
+        {
+          "id": "c",
+          "text": "Show me where you refill the windshield washer fluid."
+        },
+        {
+          "id": "d",
+          "text": "Where do you refill washer fluid?"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "hood-07",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wie kontrollieren Sie den Ölstand?",
+      "en": "How do you check the oil level?",
+      "audio": "audio/e7ec6a0bd074.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me where you refill the windshield washer fluid."
+        },
+        {
+          "id": "b",
+          "text": "Show me where you check the engine oil."
+        },
+        {
+          "id": "c",
+          "text": "What do the MIN and MAX markings mean?"
+        },
+        {
+          "id": "d",
+          "text": "How do you check the oil level?"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "hood-08",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wo füllen Sie Motoröl nach?",
+      "en": "Where do you add engine oil?",
+      "audio": "audio/095be4095d86.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please open the hood."
+        },
+        {
+          "id": "b",
+          "text": "Show me where you refill the windshield washer fluid."
+        },
+        {
+          "id": "c",
+          "text": "How do you check the oil level?"
+        },
+        {
+          "id": "d",
+          "text": "Where do you add engine oil?"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "hood-09",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wo befindet sich das Waschwasser?",
+      "en": "Where is the windshield washer fluid?",
+      "audio": "audio/222e949cc9ca.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me where you check the engine oil."
+        },
+        {
+          "id": "b",
+          "text": "Please open the hood."
+        },
+        {
+          "id": "c",
+          "text": "Where is the windshield washer fluid?"
+        },
+        {
+          "id": "d",
+          "text": "What do the MIN and MAX markings mean?"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "hood-10",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wo füllen Sie Waschwasser nach?",
+      "en": "Where do you refill washer fluid?",
+      "audio": "audio/3c737655338d.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where is the coolant?"
+        },
+        {
+          "id": "b",
+          "text": "Show me where you refill the windshield washer fluid."
+        },
+        {
+          "id": "c",
+          "text": "Where do you refill washer fluid?"
+        },
+        {
+          "id": "d",
+          "text": "What do the MIN and MAX markings mean?"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "hood-11",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wo befindet sich die Kühlflüssigkeit?",
+      "en": "Where is the coolant?",
+      "audio": "audio/265cb0270762.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please open the hood."
+        },
+        {
+          "id": "b",
+          "text": "Where is the coolant?"
+        },
+        {
+          "id": "c",
+          "text": "Where do you add engine oil?"
+        },
+        {
+          "id": "d",
+          "text": "Show me where you check the engine oil."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "hood-12",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wie kontrollieren Sie den Kühlmittelstand?",
+      "en": "How do you check the coolant level?",
+      "audio": "audio/99843063cb62.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where do you refill washer fluid?"
+        },
+        {
+          "id": "b",
+          "text": "Please close the hood."
+        },
+        {
+          "id": "c",
+          "text": "How do you check the coolant level?"
+        },
+        {
+          "id": "d",
+          "text": "What do the MIN and MAX markings mean?"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "hood-13",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wo befindet sich die Bremsflüssigkeit?",
+      "en": "Where is the brake fluid?",
+      "audio": "audio/965f9ddeda3c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where is the brake fluid?"
+        },
+        {
+          "id": "b",
+          "text": "How do you check the coolant level?"
+        },
+        {
+          "id": "c",
+          "text": "Where is the windshield washer fluid?"
+        },
+        {
+          "id": "d",
+          "text": "Show me where you refill the windshield washer fluid."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "hood-14",
+      "sit": "hood",
+      "prompt": "Listen. What does this mean?",
+      "de": "Was bedeutet die MIN- und MAX-Markierung?",
+      "en": "What do the MIN and MAX markings mean?",
+      "audio": "audio/841a7a5f2cd3.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me where you refill the windshield washer fluid."
+        },
+        {
+          "id": "b",
+          "text": "How do you check the coolant level?"
+        },
+        {
+          "id": "c",
+          "text": "What do the MIN and MAX markings mean?"
+        },
+        {
+          "id": "d",
+          "text": "Where is the windshield washer fluid?"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "controls-01",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Betätigen Sie die Hupe.",
+      "en": "Sound the horn.",
+      "audio": "audio/7bcd0c2b3613.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the parking brake."
+        },
+        {
+          "id": "b",
+          "text": "Adjust the seat."
+        },
+        {
+          "id": "c",
+          "text": "Sound the horn."
+        },
+        {
+          "id": "d",
+          "text": "Start the engine."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "controls-02",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir die Hupe.",
+      "en": "Show me the horn.",
+      "audio": "audio/0066f2a6878c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch on the rear wiper."
+        },
+        {
+          "id": "b",
+          "text": "Start the engine."
+        },
+        {
+          "id": "c",
+          "text": "Switch off the engine."
+        },
+        {
+          "id": "d",
+          "text": "Show me the horn."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "controls-03",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie die Scheibenwischer ein.",
+      "en": "Switch on the windshield wipers.",
+      "audio": "audio/e521cf649365.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Release the parking brake."
+        },
+        {
+          "id": "b",
+          "text": "Sound the horn."
+        },
+        {
+          "id": "c",
+          "text": "Adjust the mirrors."
+        },
+        {
+          "id": "d",
+          "text": "Switch on the windshield wipers."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "controls-04",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie die Scheibenwischer aus.",
+      "en": "Switch off the windshield wipers.",
+      "audio": "audio/5f707bb00300.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch off the windshield wipers."
+        },
+        {
+          "id": "b",
+          "text": "Adjust the seat."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the rear window defroster."
+        },
+        {
+          "id": "d",
+          "text": "Switch on the rear wiper."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "controls-05",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Betätigen Sie die Scheibenwaschanlage.",
+      "en": "Operate the windshield washer.",
+      "audio": "audio/6e4f150240e8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the horn."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the windshield wipers."
+        },
+        {
+          "id": "c",
+          "text": "Operate the windshield washer."
+        },
+        {
+          "id": "d",
+          "text": "Apply the parking brake."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "controls-06",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie den Heckscheibenwischer ein.",
+      "en": "Switch on the rear wiper.",
+      "audio": "audio/396598bc6690.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sound the horn."
+        },
+        {
+          "id": "b",
+          "text": "Switch off the windshield wipers."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the rear window defroster."
+        },
+        {
+          "id": "d",
+          "text": "Switch on the rear wiper."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "controls-07",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie die Heckscheibenheizung ein.",
+      "en": "Switch on the rear window defroster.",
+      "audio": "audio/49fe48da7e3b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Adjust the seat."
+        },
+        {
+          "id": "b",
+          "text": "Fasten your seat belt."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the rear window defroster."
+        },
+        {
+          "id": "d",
+          "text": "Direct ventilation toward the windshield."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "controls-08",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie die Klimaanlage ein.",
+      "en": "Switch on the air conditioning.",
+      "audio": "audio/5a1576e58df2.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Fasten your seat belt."
+        },
+        {
+          "id": "b",
+          "text": "Show me the parking brake."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the air conditioning."
+        },
+        {
+          "id": "d",
+          "text": "Show me the horn."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "controls-09",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Stellen Sie die Lüftung auf die Frontscheibe.",
+      "en": "Direct ventilation toward the windshield.",
+      "audio": "audio/31377dd07be7.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch on the rear wiper."
+        },
+        {
+          "id": "b",
+          "text": "Release the parking brake."
+        },
+        {
+          "id": "c",
+          "text": "Direct ventilation toward the windshield."
+        },
+        {
+          "id": "d",
+          "text": "Apply the parking brake."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "controls-10",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Zeigen Sie mir die Feststellbremse.",
+      "en": "Show me the parking brake.",
+      "audio": "audio/8dfc8727af1b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Adjust the seat."
+        },
+        {
+          "id": "b",
+          "text": "Release the parking brake."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the rear wiper."
+        },
+        {
+          "id": "d",
+          "text": "Show me the parking brake."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "controls-11",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Betätigen Sie die Feststellbremse.",
+      "en": "Apply the parking brake.",
+      "audio": "audio/37ef28bdf70f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Direct ventilation toward the windshield."
+        },
+        {
+          "id": "b",
+          "text": "Apply the parking brake."
+        },
+        {
+          "id": "c",
+          "text": "Sound the horn."
+        },
+        {
+          "id": "d",
+          "text": "Show me the parking brake."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "controls-12",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Lösen Sie die Feststellbremse.",
+      "en": "Release the parking brake.",
+      "audio": "audio/a6f3f6e1562a.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Direct ventilation toward the windshield."
+        },
+        {
+          "id": "b",
+          "text": "Switch off the engine."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the rear window defroster."
+        },
+        {
+          "id": "d",
+          "text": "Release the parking brake."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "controls-13",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Stellen Sie die Spiegel ein.",
+      "en": "Adjust the mirrors.",
+      "audio": "audio/2c0f10ab526b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch off the engine."
+        },
+        {
+          "id": "b",
+          "text": "Switch on the air conditioning."
+        },
+        {
+          "id": "c",
+          "text": "Adjust the mirrors."
+        },
+        {
+          "id": "d",
+          "text": "Show me the parking brake."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "controls-14",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Stellen Sie den Sitz ein.",
+      "en": "Adjust the seat.",
+      "audio": "audio/3239eb8c5a5e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch on the rear window defroster."
+        },
+        {
+          "id": "b",
+          "text": "Adjust the seat."
+        },
+        {
+          "id": "c",
+          "text": "Switch on the windshield wipers."
+        },
+        {
+          "id": "d",
+          "text": "Operate the windshield washer."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "controls-15",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Legen Sie den Sicherheitsgurt an.",
+      "en": "Fasten your seat belt.",
+      "audio": "audio/59e769c39677.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Switch on the windshield wipers."
+        },
+        {
+          "id": "b",
+          "text": "Direct ventilation toward the windshield."
+        },
+        {
+          "id": "c",
+          "text": "Fasten your seat belt."
+        },
+        {
+          "id": "d",
+          "text": "Switch off the engine."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "controls-16",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Starten Sie den Motor.",
+      "en": "Start the engine.",
+      "audio": "audio/60bff83a551b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Show me the horn."
+        },
+        {
+          "id": "b",
+          "text": "Start the engine."
+        },
+        {
+          "id": "c",
+          "text": "Show me the parking brake."
+        },
+        {
+          "id": "d",
+          "text": "Direct ventilation toward the windshield."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "controls-17",
+      "sit": "controls",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie den Motor aus.",
+      "en": "Switch off the engine.",
+      "audio": "audio/66b5e23d24d9.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Operate the windshield washer."
+        },
+        {
+          "id": "b",
+          "text": "Switch off the engine."
+        },
+        {
+          "id": "c",
+          "text": "Apply the parking brake."
+        },
+        {
+          "id": "d",
+          "text": "Sound the horn."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "exam-01",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Sind Sie bereit?",
+      "en": "Are you ready?",
+      "audio": "audio/73ec83876027.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive back to TÜV."
+        },
+        {
+          "id": "b",
+          "text": "Adjust the mirrors."
+        },
+        {
+          "id": "c",
+          "text": "Park the vehicle here."
+        },
+        {
+          "id": "d",
+          "text": "Are you ready?"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "exam-02",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Haben Sie noch Fragen?",
+      "en": "Do you have any questions?",
+      "audio": "audio/8e4f526b35f0.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive back to the test center."
+        },
+        {
+          "id": "b",
+          "text": "Please set off."
+        },
+        {
+          "id": "c",
+          "text": "Do you have any questions?"
+        },
+        {
+          "id": "d",
+          "text": "Adjust the mirrors."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "exam-03",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Stellen Sie den Sitz richtig ein.",
+      "en": "Adjust the seat correctly.",
+      "audio": "audio/9aee4f93ed1b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please start the engine."
+        },
+        {
+          "id": "b",
+          "text": "Please fasten your seat belt."
+        },
+        {
+          "id": "c",
+          "text": "Adjust the seat correctly."
+        },
+        {
+          "id": "d",
+          "text": "Please set off."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "exam-04",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Stellen Sie die Spiegel ein.",
+      "en": "Adjust the mirrors.",
+      "audio": "audio/2c0f10ab526b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive back to TÜV."
+        },
+        {
+          "id": "b",
+          "text": "Adjust the mirrors."
+        },
+        {
+          "id": "c",
+          "text": "Please set off."
+        },
+        {
+          "id": "d",
+          "text": "Please start the engine."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "exam-05",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schnallen Sie sich bitte an.",
+      "en": "Please fasten your seat belt.",
+      "audio": "audio/e925025816b8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please start the engine."
+        },
+        {
+          "id": "b",
+          "text": "Please fasten your seat belt."
+        },
+        {
+          "id": "c",
+          "text": "The examination is finished."
+        },
+        {
+          "id": "d",
+          "text": "Are you ready?"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "exam-06",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Starten Sie bitte den Motor.",
+      "en": "Please start the engine.",
+      "audio": "audio/66652e7a6a08.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive back to TÜV."
+        },
+        {
+          "id": "b",
+          "text": "Please start the engine."
+        },
+        {
+          "id": "c",
+          "text": "Adjust the seat correctly."
+        },
+        {
+          "id": "d",
+          "text": "Drive back to the test center."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "exam-07",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wir können losfahren.",
+      "en": "We can start driving.",
+      "audio": "audio/29f1640f4b5c.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Adjust the seat correctly."
+        },
+        {
+          "id": "b",
+          "text": "Please set off."
+        },
+        {
+          "id": "c",
+          "text": "We can start driving."
+        },
+        {
+          "id": "d",
+          "text": "Park the vehicle here."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "exam-08",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie bitte los.",
+      "en": "Please set off.",
+      "audio": "audio/046a2eb44502.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Park the vehicle here."
+        },
+        {
+          "id": "b",
+          "text": "Are you ready?"
+        },
+        {
+          "id": "c",
+          "text": "We can start driving."
+        },
+        {
+          "id": "d",
+          "text": "Please set off."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "exam-09",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie zurück zur Prüfstelle.",
+      "en": "Drive back to the test center.",
+      "audio": "audio/434cc25021fb.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Do you have any questions?"
+        },
+        {
+          "id": "b",
+          "text": "Park the vehicle here."
+        },
+        {
+          "id": "c",
+          "text": "Drive back to the test center."
+        },
+        {
+          "id": "d",
+          "text": "We can start driving."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "exam-10",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahren Sie zurück zum TÜV.",
+      "en": "Drive back to TÜV.",
+      "audio": "audio/29179a269ea0.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Are you ready?"
+        },
+        {
+          "id": "b",
+          "text": "Do you have any questions?"
+        },
+        {
+          "id": "c",
+          "text": "Switch off the engine."
+        },
+        {
+          "id": "d",
+          "text": "Drive back to TÜV."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "exam-11",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Stellen Sie das Fahrzeug hier ab.",
+      "en": "Park the vehicle here.",
+      "audio": "audio/fcf7cd0dcd1b.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drive back to TÜV."
+        },
+        {
+          "id": "b",
+          "text": "Park the vehicle here."
+        },
+        {
+          "id": "c",
+          "text": "Adjust the seat correctly."
+        },
+        {
+          "id": "d",
+          "text": "Switch off the engine."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "exam-12",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schalten Sie den Motor aus.",
+      "en": "Switch off the engine.",
+      "audio": "audio/66b5e23d24d9.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Adjust the mirrors."
+        },
+        {
+          "id": "b",
+          "text": "Switch off the engine."
+        },
+        {
+          "id": "c",
+          "text": "We can start driving."
+        },
+        {
+          "id": "d",
+          "text": "Drive back to TÜV."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "exam-13",
+      "sit": "exam",
+      "prompt": "Listen. What does this mean?",
+      "de": "Die Prüfung ist beendet.",
+      "en": "The examination is finished.",
+      "audio": "audio/14194536f467.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Do you have any questions?"
+        },
+        {
+          "id": "b",
+          "text": "Please set off."
+        },
+        {
+          "id": "c",
+          "text": "The examination is finished."
+        },
+        {
+          "id": "d",
+          "text": "Park the vehicle here."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "phrases-01",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Können Sie das bitte wiederholen?",
+      "en": "Could you please repeat that?",
+      "audio": "audio/c3b190648514.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Should I turn right here?"
+        },
+        {
+          "id": "b",
+          "text": "Could you please speak more slowly?"
+        },
+        {
+          "id": "c",
+          "text": "Could you please repeat that?"
+        },
+        {
+          "id": "d",
+          "text": "Sorry, I didn't understand you."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "phrases-02",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Können Sie bitte langsamer sprechen?",
+      "en": "Could you please speak more slowly?",
+      "audio": "audio/00c052f1339e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "May I turn around here?"
+        },
+        {
+          "id": "b",
+          "text": "Could you please repeat that?"
+        },
+        {
+          "id": "c",
+          "text": "Could you please speak more slowly?"
+        },
+        {
+          "id": "d",
+          "text": "Do you mean the next street?"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "phrases-03",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Entschuldigung, ich habe Sie nicht verstanden.",
+      "en": "Sorry, I didn't understand you.",
+      "audio": "audio/980b17c3b6c1.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Should I stop here?"
+        },
+        {
+          "id": "b",
+          "text": "Sorry, I didn't understand you."
+        },
+        {
+          "id": "c",
+          "text": "Should I park forward or reverse?"
+        },
+        {
+          "id": "d",
+          "text": "Could you please speak more slowly?"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "phrases-04",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Meinen Sie die nächste Straße?",
+      "en": "Do you mean the next street?",
+      "audio": "audio/279077477864.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Could you please repeat that?"
+        },
+        {
+          "id": "b",
+          "text": "May I turn around here?"
+        },
+        {
+          "id": "c",
+          "text": "Do you mean the next street?"
+        },
+        {
+          "id": "d",
+          "text": "Sorry, I didn't understand you."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "phrases-05",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Soll ich hier rechts abbiegen?",
+      "en": "Should I turn right here?",
+      "audio": "audio/092e6a95cc38.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Could you please repeat that?"
+        },
+        {
+          "id": "b",
+          "text": "Do you mean the next street?"
+        },
+        {
+          "id": "c",
+          "text": "Sorry, I didn't understand you."
+        },
+        {
+          "id": "d",
+          "text": "Should I turn right here?"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "phrases-06",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Soll ich hier anhalten?",
+      "en": "Should I stop here?",
+      "audio": "audio/0ee0ccc2aac5.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Should I stop here?"
+        },
+        {
+          "id": "b",
+          "text": "Should I turn right here?"
+        },
+        {
+          "id": "c",
+          "text": "Could you please speak more slowly?"
+        },
+        {
+          "id": "d",
+          "text": "Should I park forward or reverse?"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "phrases-07",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Soll ich vorwärts oder rückwärts einparken?",
+      "en": "Should I park forward or reverse?",
+      "audio": "audio/87b65eed1fcd.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Could you please speak more slowly?"
+        },
+        {
+          "id": "b",
+          "text": "Should I park forward or reverse?"
+        },
+        {
+          "id": "c",
+          "text": "One moment, please."
+        },
+        {
+          "id": "d",
+          "text": "Do you mean the next street?"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "phrases-08",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Darf ich hier wenden?",
+      "en": "May I turn around here?",
+      "audio": "audio/08d965ff9f16.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sorry, I didn't understand you."
+        },
+        {
+          "id": "b",
+          "text": "Should I stop here?"
+        },
+        {
+          "id": "c",
+          "text": "May I turn around here?"
+        },
+        {
+          "id": "d",
+          "text": "One moment, please."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "phrases-09",
+      "sit": "phrases",
+      "prompt": "Listen. What does this mean?",
+      "de": "Einen Moment, bitte.",
+      "en": "One moment, please.",
+      "audio": "audio/dcccfdfc5746.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "May I turn around here?"
+        },
+        {
+          "id": "b",
+          "text": "One moment, please."
+        },
+        {
+          "id": "c",
+          "text": "Should I turn right here?"
+        },
+        {
+          "id": "d",
+          "text": "Could you please speak more slowly?"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "words-01",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Rechts",
+      "en": "Right",
+      "audio": "audio/016d017bfa43.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Right"
+        },
+        {
+          "id": "b",
+          "text": "Behind it"
+        },
+        {
+          "id": "c",
+          "text": "Lane"
+        },
+        {
+          "id": "d",
+          "text": "Next to it"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "words-02",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Links",
+      "en": "Left",
+      "audio": "audio/77ba14b19d4f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Left"
+        },
+        {
+          "id": "b",
+          "text": "Continue"
+        },
+        {
+          "id": "c",
+          "text": "Behind it"
+        },
+        {
+          "id": "d",
+          "text": "Intersection"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "words-03",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Geradeaus",
+      "en": "Straight ahead",
+      "audio": "audio/1b134a40936e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Straight ahead"
+        },
+        {
+          "id": "b",
+          "text": "Turn around"
+        },
+        {
+          "id": "c",
+          "text": "Traffic light"
+        },
+        {
+          "id": "d",
+          "text": "Backward"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "words-04",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Nächste",
+      "en": "Next",
+      "audio": "audio/5766a334df82.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Here"
+        },
+        {
+          "id": "b",
+          "text": "Next"
+        },
+        {
+          "id": "c",
+          "text": "Traffic light"
+        },
+        {
+          "id": "d",
+          "text": "Lane"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "words-05",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Hier",
+      "en": "Here",
+      "audio": "audio/657f38b6aa0e.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Right"
+        },
+        {
+          "id": "b",
+          "text": "Here"
+        },
+        {
+          "id": "c",
+          "text": "Turn"
+        },
+        {
+          "id": "d",
+          "text": "Entrance ramp"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "words-06",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Dahinter",
+      "en": "Behind it",
+      "audio": "audio/827d42fa759d.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn"
+        },
+        {
+          "id": "b",
+          "text": "Intersection"
+        },
+        {
+          "id": "c",
+          "text": "Behind it"
+        },
+        {
+          "id": "d",
+          "text": "Straight ahead"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "words-07",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Davor",
+      "en": "In front of it",
+      "audio": "audio/7380c629b507.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn around"
+        },
+        {
+          "id": "b",
+          "text": "Entrance ramp"
+        },
+        {
+          "id": "c",
+          "text": "In front of it"
+        },
+        {
+          "id": "d",
+          "text": "Straight ahead"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "words-08",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Daneben",
+      "en": "Next to it",
+      "audio": "audio/5e83106846c2.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exit"
+        },
+        {
+          "id": "b",
+          "text": "Next"
+        },
+        {
+          "id": "c",
+          "text": "Next to it"
+        },
+        {
+          "id": "d",
+          "text": "Traffic light"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "words-09",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Vorwärts",
+      "en": "Forward",
+      "audio": "audio/39943f1dc179.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Roundabout"
+        },
+        {
+          "id": "b",
+          "text": "Exit"
+        },
+        {
+          "id": "c",
+          "text": "Lane"
+        },
+        {
+          "id": "d",
+          "text": "Forward"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "words-10",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Rückwärts",
+      "en": "Backward",
+      "audio": "audio/5f888db71f97.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Brake"
+        },
+        {
+          "id": "b",
+          "text": "Straight ahead"
+        },
+        {
+          "id": "c",
+          "text": "Right"
+        },
+        {
+          "id": "d",
+          "text": "Backward"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "words-11",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Anhalten",
+      "en": "Stop",
+      "audio": "audio/8cd6e2cba7c6.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Forward"
+        },
+        {
+          "id": "b",
+          "text": "Stop"
+        },
+        {
+          "id": "c",
+          "text": "Shoulder check"
+        },
+        {
+          "id": "d",
+          "text": "Left"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "words-12",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Weiterfahren",
+      "en": "Continue",
+      "audio": "audio/62281a1886a7.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue"
+        },
+        {
+          "id": "b",
+          "text": "Turn"
+        },
+        {
+          "id": "c",
+          "text": "Shoulder check"
+        },
+        {
+          "id": "d",
+          "text": "Behind it"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "words-13",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Abbiegen",
+      "en": "Turn",
+      "audio": "audio/a34a10562392.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Turn"
+        },
+        {
+          "id": "b",
+          "text": "Straight ahead"
+        },
+        {
+          "id": "c",
+          "text": "Exit"
+        },
+        {
+          "id": "d",
+          "text": "Roundabout"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "words-14",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Wenden",
+      "en": "Turn around",
+      "audio": "audio/f488937ae1ec.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Behind it"
+        },
+        {
+          "id": "b",
+          "text": "Continue"
+        },
+        {
+          "id": "c",
+          "text": "Turn around"
+        },
+        {
+          "id": "d",
+          "text": "Lane"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "words-15",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Einparken",
+      "en": "Park",
+      "audio": "audio/30cbcf36fc76.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue"
+        },
+        {
+          "id": "b",
+          "text": "Backward"
+        },
+        {
+          "id": "c",
+          "text": "Park"
+        },
+        {
+          "id": "d",
+          "text": "Behind it"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "words-16",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Ausparken",
+      "en": "Leave parking space",
+      "audio": "audio/07901a407c60.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Intersection"
+        },
+        {
+          "id": "b",
+          "text": "Leave parking space"
+        },
+        {
+          "id": "c",
+          "text": "Next to it"
+        },
+        {
+          "id": "d",
+          "text": "Behind it"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "words-17",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Kreuzung",
+      "en": "Intersection",
+      "audio": "audio/370c590a01bd.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Traffic light"
+        },
+        {
+          "id": "b",
+          "text": "Turn around"
+        },
+        {
+          "id": "c",
+          "text": "Intersection"
+        },
+        {
+          "id": "d",
+          "text": "Lane"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "words-18",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Einmündung",
+      "en": "Junction",
+      "audio": "audio/eb9087fc5744.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Junction"
+        },
+        {
+          "id": "b",
+          "text": "Left"
+        },
+        {
+          "id": "c",
+          "text": "Brake"
+        },
+        {
+          "id": "d",
+          "text": "Turn around"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "words-19",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Ampel",
+      "en": "Traffic light",
+      "audio": "audio/b6ec40d0e416.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Roundabout"
+        },
+        {
+          "id": "b",
+          "text": "Backward"
+        },
+        {
+          "id": "c",
+          "text": "Entrance ramp"
+        },
+        {
+          "id": "d",
+          "text": "Traffic light"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "words-20",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Kreisverkehr",
+      "en": "Roundabout",
+      "audio": "audio/c8018494f50f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Roundabout"
+        },
+        {
+          "id": "b",
+          "text": "Entrance ramp"
+        },
+        {
+          "id": "c",
+          "text": "Left"
+        },
+        {
+          "id": "d",
+          "text": "Traffic light"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "words-21",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Ausfahrt",
+      "en": "Exit",
+      "audio": "audio/2a6343b98e64.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "In front of it"
+        },
+        {
+          "id": "b",
+          "text": "Right"
+        },
+        {
+          "id": "c",
+          "text": "Lane"
+        },
+        {
+          "id": "d",
+          "text": "Exit"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "words-22",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Auffahrt",
+      "en": "Entrance ramp",
+      "audio": "audio/e261ec523cc8.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Right"
+        },
+        {
+          "id": "b",
+          "text": "Stop"
+        },
+        {
+          "id": "c",
+          "text": "Entrance ramp"
+        },
+        {
+          "id": "d",
+          "text": "Next"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "words-23",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahrbahnrand",
+      "en": "Road edge",
+      "audio": "audio/d65616f1c91f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Next to it"
+        },
+        {
+          "id": "b",
+          "text": "Continue"
+        },
+        {
+          "id": "c",
+          "text": "Park"
+        },
+        {
+          "id": "d",
+          "text": "Road edge"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "words-24",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Fahrstreifen",
+      "en": "Lane",
+      "audio": "audio/804400bd521f.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lane"
+        },
+        {
+          "id": "b",
+          "text": "Turn around"
+        },
+        {
+          "id": "c",
+          "text": "Exit"
+        },
+        {
+          "id": "d",
+          "text": "Stop"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "words-25",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Schulterblick",
+      "en": "Shoulder check",
+      "audio": "audio/85acc2115f57.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Next"
+        },
+        {
+          "id": "b",
+          "text": "Shoulder check"
+        },
+        {
+          "id": "c",
+          "text": "Brake"
+        },
+        {
+          "id": "d",
+          "text": "Road edge"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "words-26",
+      "sit": "words",
+      "prompt": "Listen. What does this mean?",
+      "de": "Bremsen",
+      "en": "Brake",
+      "audio": "audio/9c5e59a3c63d.mp3",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Leave parking space"
+        },
+        {
+          "id": "b",
+          "text": "Stop"
+        },
+        {
+          "id": "c",
+          "text": "Brake"
+        },
+        {
+          "id": "d",
+          "text": "Road edge"
+        }
+      ],
+      "correct": "c"
+    }
+  ]
+}

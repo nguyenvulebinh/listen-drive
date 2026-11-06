@@ -41,6 +41,14 @@
             </div>
           </div>
 
+          <div id="playback" class="playback" hidden>
+            <button type="button" id="playbackToggle" class="playback-toggle" aria-pressed="false">Play</button>
+            <button type="button" id="playbackTrack" class="playback-track" aria-label="Seek">
+              <span id="playbackBar" class="playback-bar"></span>
+            </button>
+            <span id="playbackTime" class="playback-time">0:00 / 0:00</span>
+          </div>
+
           <button type="button" id="replayBtn" class="replay">
             <svg class="replay-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -72,16 +80,21 @@
         </div>
 
         <fieldset class="field">
-          <legend>Situation</legend>
-          <div id="sitPills" class="pills"></div>
+          <legend>Practice</legend>
+          <div id="modePills" class="pills"></div>
         </fieldset>
 
         <fieldset class="field">
+          <legend id="sitLegend">Situation</legend>
+          <div id="sitPills" class="pills"></div>
+        </fieldset>
+
+        <fieldset class="field" id="typeField">
           <legend>Type</legend>
           <div id="typePills" class="pills"></div>
         </fieldset>
 
-        <fieldset class="field">
+        <fieldset class="field" id="regField">
           <legend>Register</legend>
           <div id="regPills" class="pills"></div>
         </fieldset>

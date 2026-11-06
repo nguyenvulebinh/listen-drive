@@ -119,6 +119,65 @@ button {
   gap: 12px;
 }
 
+.practice.is-audio .video-wrap {
+  display: none;
+}
+
+.playback {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.playback[hidden] {
+  display: none;
+}
+
+.playback-toggle {
+  flex: 0 0 auto;
+  min-width: 76px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--green);
+  color: #fff;
+  font-weight: 700;
+}
+
+.playback-toggle[aria-pressed="true"] {
+  background: var(--text);
+}
+
+.playback-track {
+  position: relative;
+  flex: 1;
+  height: 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.playback-bar {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--green);
+}
+
+.playback-time {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+}
+
 .video-wrap {
   position: relative;
   width: 100%;
